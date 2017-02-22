@@ -1,0 +1,1813 @@
+STA1:~# iw wlan0 scan
+BSS 84:d4:7e:27:c0:61 (on wlan0)
+	TSF: 135045639 usec (0d, 00:02:15)
+	freq: 2412
+	beacon interval: 100
+	capability: ESS ShortPreamble ShortSlotTime (0x1421)
+	signal: -82.00 dBm
+	last seen: 0 ms ago
+	SSID: UA-guest
+	Supported rates: 1.0* 2.0* 5.5 11.0 18.0 24.0 36.0 54.0 
+	DS Parameter set: channel 1
+	ERP: <no flags>
+	Extended supported rates: 6.0 9.0 12.0 48.0 
+	HT capabilities:
+		Capabilities: 0x19ad
+			RX LDPC
+			HT20
+			SM Power Save disabled
+			RX HT20 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 7935 bytes
+			DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 1
+		 * secondary channel offset: no secondary
+		 * STA channel width: 20 MHz
+		 * RIFS: 1
+		 * HT protection: nonmember
+		 * non-GF present: 1
+		 * OBSS non-GF present: 1
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: HT Information Exchange Supported, Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 08:76:ff:b4:09:c3 (on wlan0)
+	TSF: 84765833262 usec (0d, 23:32:45)
+	freq: 2412
+	beacon interval: 100
+	capability: ESS Privacy ShortSlotTime (0x0411)
+	signal: -60.00 dBm
+	last seen: 0 ms ago
+	Information elements from Probe Response frame:
+	SSID: mosaic
+	Supported rates: 1.0* 2.0* 5.5* 11.0* 18.0 24.0 36.0 54.0 
+	DS Parameter set: channel 1
+	ERP: <no flags>
+	RSN:	 * Version: 1
+		 * Group cipher: TKIP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: PSK
+		 * Capabilities: 16-PTKSA-RC (0x000c)
+	Extended supported rates: 6.0 9.0 12.0 48.0 
+	HT capabilities:
+		Capabilities: 0x181c
+			HT20
+			SM Power Save disabled
+			RX Greenfield
+			No RX STBC
+			Max AMSDU length: 7935 bytes
+			DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 8 usec (0x06)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 1
+		 * secondary channel offset: no secondary
+		 * STA channel width: 20 MHz
+		 * RIFS: 1
+		 * HT protection: nonmember
+		 * non-GF present: 1
+		 * OBSS non-GF present: 1
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	WPA:	 * Version: 1
+		 * Group cipher: TKIP
+		 * Pairwise ciphers: TKIP
+		 * Authentication suites: PSK
+	WMM:	 * Parameter version 1
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:b5:80 (on wlan0)
+	TSF: 56933171611 usec (0d, 15:48:53)
+	freq: 2412
+	beacon interval: 100
+	capability: ESS Privacy ShortPreamble ShortSlotTime (0x1431)
+	signal: -62.00 dBm
+	last seen: 2290 ms ago
+	SSID: eduroam
+	Supported rates: 1.0* 2.0* 5.5 11.0 18.0 24.0 36.0 54.0 
+	DS Parameter set: channel 1
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	ERP: <no flags>
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: IEEE 802.1X
+		 * Capabilities: 4-PTKSA-RC 4-GTKSA-RC (0x0028)
+	Extended supported rates: 6.0 9.0 12.0 48.0 
+	HT capabilities:
+		Capabilities: 0x19ad
+			RX LDPC
+			HT20
+			SM Power Save disabled
+			RX HT20 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 7935 bytes
+			DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 1
+		 * secondary channel offset: no secondary
+		 * STA channel width: 20 MHz
+		 * RIFS: 1
+		 * HT protection: nonmember
+		 * non-GF present: 1
+		 * OBSS non-GF present: 1
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: HT Information Exchange Supported, Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:b5:81 (on wlan0)
+	TSF: 56933216561 usec (0d, 15:48:53)
+	freq: 2412
+	beacon interval: 100
+	capability: ESS ShortPreamble ShortSlotTime (0x1421)
+	signal: -63.00 dBm
+	last seen: 0 ms ago
+	Information elements from Probe Response frame:
+	SSID: UA-guest
+	Supported rates: 1.0* 2.0* 5.5 11.0 18.0 24.0 36.0 54.0 
+	DS Parameter set: channel 1
+	ERP: <no flags>
+	Extended supported rates: 6.0 9.0 12.0 48.0 
+	HT capabilities:
+		Capabilities: 0x19ad
+			RX LDPC
+			HT20
+			SM Power Save disabled
+			RX HT20 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 7935 bytes
+			DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 1
+		 * secondary channel offset: no secondary
+		 * STA channel width: 20 MHz
+		 * RIFS: 1
+		 * HT protection: nonmember
+		 * non-GF present: 1
+		 * OBSS non-GF present: 1
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: HT Information Exchange Supported, Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:b5:82 (on wlan0)
+	TSF: 56933287652 usec (0d, 15:48:53)
+	freq: 2412
+	beacon interval: 100
+	capability: ESS Privacy ShortPreamble ShortSlotTime (0x1431)
+	signal: -70.00 dBm
+	last seen: 0 ms ago
+	Information elements from Probe Response frame:
+	SSID: UAntwerpen
+	Supported rates: 1.0* 2.0* 5.5 11.0 18.0 24.0 36.0 54.0 
+	DS Parameter set: channel 1
+	ERP: <no flags>
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: IEEE 802.1X
+		 * Capabilities: 4-PTKSA-RC 4-GTKSA-RC (0x0028)
+	Extended supported rates: 6.0 9.0 12.0 48.0 
+	HT capabilities:
+		Capabilities: 0x19ad
+			RX LDPC
+			HT20
+			SM Power Save disabled
+			RX HT20 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 7935 bytes
+			DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 1
+		 * secondary channel offset: no secondary
+		 * STA channel width: 20 MHz
+		 * RIFS: 1
+		 * HT protection: nonmember
+		 * non-GF present: 1
+		 * OBSS non-GF present: 1
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: HT Information Exchange Supported, Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 00:1d:7e:1b:11:83 (on wlan0)
+	TSF: 4060064321791 usec (46d, 23:47:44)
+	freq: 2437
+	beacon interval: 100
+	capability: ESS Privacy ShortPreamble ShortSlotTime (0x0431)
+	signal: -52.00 dBm
+	last seen: 0 ms ago
+	Information elements from Probe Response frame:
+	SSID: Wireless Antwerpen PATS test
+	Supported rates: 1.0* 2.0* 5.5* 11.0* 18.0 24.0* 36.0 54.0 
+	DS Parameter set: channel 6
+	ERP: <no flags>
+	RSN:	 * Version: 1
+		 * Group cipher: TKIP
+		 * Pairwise ciphers: TKIP
+		 * Authentication suites: PSK
+		 * Capabilities: 16-PTKSA-RC (0x000c)
+	Extended supported rates: 6.0* 9.0 12.0* 48.0 
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 08:76:ff:4c:0e:9e (on wlan0)
+	TSF: 4421206890 usec (0d, 01:13:41)
+	freq: 2437
+	beacon interval: 100
+	capability: ESS Privacy ShortSlotTime (0x0411)
+	signal: -81.00 dBm
+	last seen: 0 ms ago
+	SSID: mosaic
+	Supported rates: 1.0* 2.0* 5.5* 11.0* 18.0 24.0 36.0 54.0 
+	DS Parameter set: channel 6
+	ERP: Barker_Preamble_Mode
+	RSN:	 * Version: 1
+		 * Group cipher: TKIP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: PSK
+		 * Capabilities: 16-PTKSA-RC (0x000c)
+	Extended supported rates: 6.0 9.0 12.0 48.0 
+	HT capabilities:
+		Capabilities: 0x181c
+			HT20
+			SM Power Save disabled
+			RX Greenfield
+			No RX STBC
+			Max AMSDU length: 7935 bytes
+			DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 8 usec (0x06)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 6
+		 * secondary channel offset: no secondary
+		 * STA channel width: 20 MHz
+		 * RIFS: 1
+		 * HT protection: nonmember
+		 * non-GF present: 1
+		 * OBSS non-GF present: 1
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	WPA:	 * Version: 1
+		 * Group cipher: TKIP
+		 * Pairwise ciphers: TKIP
+		 * Authentication suites: PSK
+	WMM:	 * Parameter version 1
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 04:1e:64:f2:13:b1 (on wlan0)
+	TSF: 48606081311 usec (0d, 13:30:06)
+	freq: 2462
+	beacon interval: 100
+	capability: ESS Privacy ShortPreamble ShortSlotTime (0x0431)
+	signal: -62.00 dBm
+	last seen: 0 ms ago
+	Information elements from Probe Response frame:
+	SSID: G233
+	Supported rates: 1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 
+	DS Parameter set: channel 11
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [1 - 13] @ 30 dBm
+	ERP: <no flags>
+	Extended supported rates: 24.0 36.0 48.0 54.0 
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: PSK
+		 * Capabilities: (0x0000)
+	HT capabilities:
+		Capabilities: 0x500c
+			HT20
+			SM Power Save disabled
+			No RX STBC
+			Max AMSDU length: 3839 bytes
+			DSSS/CCK HT40
+			40 MHz Intolerant
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 8 usec (0x06)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 11
+		 * secondary channel offset: no secondary
+		 * STA channel width: 20 MHz
+		 * RIFS: 0
+		 * HT protection: nonmember
+		 * non-GF present: 0
+		 * OBSS non-GF present: 1
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	WMM:	 * Parameter version 1
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 00:0b:86:a6:25:75 (on wlan0)
+	TSF: 5128714348 usec (0d, 01:25:28)
+	freq: 2462
+	beacon interval: 100
+	capability: ESS Privacy ShortPreamble ShortSlotTime (0x0431)
+	signal: -74.00 dBm
+	last seen: 0 ms ago
+	SSID: UAntwerpen
+	Supported rates: 1.0* 2.0* 5.5 6.0 9.0 11.0 12.0 18.0 
+	DS Parameter set: channel 11
+	ERP: <no flags>
+	Extended supported rates: 24.0 36.0 48.0 54.0 
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: IEEE 802.1X
+		 * Capabilities: (0x0000)
+BSS 84:d4:7e:27:bc:00 (on wlan0)
+	TSF: 63096833543 usec (0d, 17:31:36)
+	freq: 2462
+	beacon interval: 100
+	capability: ESS Privacy ShortPreamble ShortSlotTime (0x1431)
+	signal: -71.00 dBm
+	last seen: 1720 ms ago
+	SSID: eduroam
+	Supported rates: 1.0* 2.0* 5.5 11.0 18.0 24.0 36.0 54.0 
+	DS Parameter set: channel 11
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	ERP: <no flags>
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: IEEE 802.1X
+		 * Capabilities: 4-PTKSA-RC 4-GTKSA-RC (0x0028)
+	Extended supported rates: 6.0 9.0 12.0 48.0 
+	HT capabilities:
+		Capabilities: 0x19ad
+			RX LDPC
+			HT20
+			SM Power Save disabled
+			RX HT20 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 7935 bytes
+			DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 11
+		 * secondary channel offset: no secondary
+		 * STA channel width: 20 MHz
+		 * RIFS: 1
+		 * HT protection: nonmember
+		 * non-GF present: 1
+		 * OBSS non-GF present: 1
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: HT Information Exchange Supported, Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:bc:01 (on wlan0)
+	TSF: 63096835451 usec (0d, 17:31:36)
+	freq: 2462
+	beacon interval: 100
+	capability: ESS ShortPreamble ShortSlotTime (0x1421)
+	signal: -71.00 dBm
+	last seen: 1720 ms ago
+	SSID: UA-guest
+	Supported rates: 1.0* 2.0* 5.5 11.0 18.0 24.0 36.0 54.0 
+	DS Parameter set: channel 11
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	ERP: <no flags>
+	Extended supported rates: 6.0 9.0 12.0 48.0 
+	HT capabilities:
+		Capabilities: 0x19ad
+			RX LDPC
+			HT20
+			SM Power Save disabled
+			RX HT20 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 7935 bytes
+			DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 11
+		 * secondary channel offset: no secondary
+		 * STA channel width: 20 MHz
+		 * RIFS: 1
+		 * HT protection: nonmember
+		 * non-GF present: 1
+		 * OBSS non-GF present: 1
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: HT Information Exchange Supported, Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:bc:02 (on wlan0)
+	TSF: 63096837217 usec (0d, 17:31:36)
+	freq: 2462
+	beacon interval: 100
+	capability: ESS Privacy ShortPreamble ShortSlotTime (0x1431)
+	signal: -71.00 dBm
+	last seen: 1720 ms ago
+	SSID: UAntwerpen
+	Supported rates: 1.0* 2.0* 5.5 11.0 18.0 24.0 36.0 54.0 
+	DS Parameter set: channel 11
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	ERP: <no flags>
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: IEEE 802.1X
+		 * Capabilities: 4-PTKSA-RC 4-GTKSA-RC (0x0028)
+	Extended supported rates: 6.0 9.0 12.0 48.0 
+	HT capabilities:
+		Capabilities: 0x19ad
+			RX LDPC
+			HT20
+			SM Power Save disabled
+			RX HT20 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 7935 bytes
+			DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 11
+		 * secondary channel offset: no secondary
+		 * STA channel width: 20 MHz
+		 * RIFS: 1
+		 * HT protection: nonmember
+		 * non-GF present: 1
+		 * OBSS non-GF present: 1
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: HT Information Exchange Supported, Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:a3:e0 (on wlan0)
+	TSF: 48343246211 usec (0d, 13:25:43)
+	freq: 2462
+	beacon interval: 100
+	capability: ESS Privacy ShortPreamble ShortSlotTime (0x1431)
+	signal: -75.00 dBm
+	last seen: 1720 ms ago
+	SSID: eduroam
+	Supported rates: 1.0* 2.0* 5.5 11.0 18.0 24.0 36.0 54.0 
+	DS Parameter set: channel 11
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	ERP: <no flags>
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: IEEE 802.1X
+		 * Capabilities: 4-PTKSA-RC 4-GTKSA-RC (0x0028)
+	Extended supported rates: 6.0 9.0 12.0 48.0 
+	HT capabilities:
+		Capabilities: 0x19ad
+			RX LDPC
+			HT20
+			SM Power Save disabled
+			RX HT20 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 7935 bytes
+			DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 11
+		 * secondary channel offset: no secondary
+		 * STA channel width: 20 MHz
+		 * RIFS: 1
+		 * HT protection: nonmember
+		 * non-GF present: 1
+		 * OBSS non-GF present: 1
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: HT Information Exchange Supported, Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:a3:e1 (on wlan0)
+	TSF: 48343248127 usec (0d, 13:25:43)
+	freq: 2462
+	beacon interval: 100
+	capability: ESS ShortPreamble ShortSlotTime (0x1421)
+	signal: -74.00 dBm
+	last seen: 1720 ms ago
+	SSID: UA-guest
+	Supported rates: 1.0* 2.0* 5.5 11.0 18.0 24.0 36.0 54.0 
+	DS Parameter set: channel 11
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	ERP: <no flags>
+	Extended supported rates: 6.0 9.0 12.0 48.0 
+	HT capabilities:
+		Capabilities: 0x19ad
+			RX LDPC
+			HT20
+			SM Power Save disabled
+			RX HT20 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 7935 bytes
+			DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 11
+		 * secondary channel offset: no secondary
+		 * STA channel width: 20 MHz
+		 * RIFS: 1
+		 * HT protection: nonmember
+		 * non-GF present: 1
+		 * OBSS non-GF present: 1
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: HT Information Exchange Supported, Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:a3:e2 (on wlan0)
+	TSF: 48343249884 usec (0d, 13:25:43)
+	freq: 2462
+	beacon interval: 100
+	capability: ESS Privacy ShortPreamble ShortSlotTime (0x1431)
+	signal: -75.00 dBm
+	last seen: 1720 ms ago
+	SSID: UAntwerpen
+	Supported rates: 1.0* 2.0* 5.5 11.0 18.0 24.0 36.0 54.0 
+	DS Parameter set: channel 11
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	ERP: <no flags>
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: IEEE 802.1X
+		 * Capabilities: 4-PTKSA-RC 4-GTKSA-RC (0x0028)
+	Extended supported rates: 6.0 9.0 12.0 48.0 
+	HT capabilities:
+		Capabilities: 0x19ad
+			RX LDPC
+			HT20
+			SM Power Save disabled
+			RX HT20 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 7935 bytes
+			DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 11
+		 * secondary channel offset: no secondary
+		 * STA channel width: 20 MHz
+		 * RIFS: 1
+		 * HT protection: nonmember
+		 * non-GF present: 1
+		 * OBSS non-GF present: 1
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: HT Information Exchange Supported, Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS f0:99:bf:0c:be:38 (on wlan0)
+	TSF: 26319515708538 usec (304d, 14:58:35)
+	freq: 2462
+	beacon interval: 100
+	capability: ESS Privacy SpectrumMgmt ShortSlotTime (0x1511)
+	signal: -76.00 dBm
+	last seen: 0 ms ago
+	SSID: Jan's Wi-Fi Network
+	Supported rates: 1.0* 2.0* 5.5* 11.0* 18.0 24.0 36.0 54.0 
+	DS Parameter set: channel 11
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [1 - 13] @ 20 dBm
+	Power constraint: 0 dB
+	ERP: <no flags>
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: PSK
+		 * Capabilities: (0x0000)
+	Extended supported rates: 6.0 9.0 12.0 48.0 
+	HT capabilities:
+		Capabilities: 0x19ad
+			RX LDPC
+			HT20
+			SM Power Save disabled
+			RX HT20 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 7935 bytes
+			DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-23
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 11
+		 * secondary channel offset: no secondary
+		 * STA channel width: 20 MHz
+		 * RIFS: 1
+		 * HT protection: nonmember
+		 * non-GF present: 0
+		 * OBSS non-GF present: 1
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 06:53:7c:31:a4:85 (on wlan0)
+	TSF: 512695501171 usec (5d, 22:24:55)
+	freq: 2462
+	beacon interval: 100
+	capability: ESS Privacy ShortSlotTime (0x0411)
+	signal: -82.00 dBm
+	last seen: 1700 ms ago
+	SSID: TelenetWiFree
+	Supported rates: 1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 
+	DS Parameter set: channel 11
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [1 - 13] @ 20 dBm
+	ERP: Barker_Preamble_Mode
+	Extended supported rates: 24.0 36.0 48.0 54.0 
+	HT capabilities:
+		Capabilities: 0x198c
+			HT20
+			SM Power Save disabled
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 7935 bytes
+			DSSS/CCK HT40
+		Maximum RX AMPDU length 32767 bytes (exponent: 0x002)
+		Minimum RX AMPDU time spacing: 16 usec (0x07)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 11
+		 * secondary channel offset: no secondary
+		 * STA channel width: 20 MHz
+		 * RIFS: 0
+		 * HT protection: no
+		 * non-GF present: 0
+		 * OBSS non-GF present: 0
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	WPA:	 * Version: 1
+		 * Group cipher: TKIP
+		 * Pairwise ciphers: TKIP CCMP
+		 * Authentication suites: IEEE 802.1X
+	RSN:	 * Version: 1
+		 * Group cipher: TKIP
+		 * Pairwise ciphers: TKIP CCMP
+		 * Authentication suites: IEEE 802.1X
+		 * Capabilities: (0x0000)
+	WMM:	 * Parameter version 1
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:c2:10 (on wlan0)
+	TSF: 96414024736 usec (1d, 02:46:54)
+	freq: 5180
+	beacon interval: 100
+	capability: ESS Privacy SpectrumMgmt (0x1111)
+	signal: -79.00 dBm
+	last seen: 0 ms ago
+	Information elements from Probe Response frame:
+	SSID: eduroam
+	Supported rates: 6.0* 9.0 12.0* 18.0 24.0* 36.0 48.0 54.0 
+	DS Parameter set: channel 36
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [36 - 64] @ 23 dBm
+		Channels [100 - 140] @ 30 dBm
+	Power constraint: 0 dB
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: IEEE 802.1X
+		 * Capabilities: 4-PTKSA-RC 4-GTKSA-RC (0x0028)
+	HT capabilities:
+		Capabilities: 0x1ef
+			RX LDPC
+			HT20/HT40
+			SM Power Save disabled
+			RX HT20 SGI
+			RX HT40 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 3839 bytes
+			No DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 36
+		 * secondary channel offset: above
+		 * STA channel width: any
+		 * RIFS: 1
+		 * HT protection: 20 MHz
+		 * non-GF present: 1
+		 * OBSS non-GF present: 1
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:c2:11 (on wlan0)
+	TSF: 96414025155 usec (1d, 02:46:54)
+	freq: 5180
+	beacon interval: 100
+	capability: ESS SpectrumMgmt (0x1101)
+	signal: -78.00 dBm
+	last seen: 0 ms ago
+	Information elements from Probe Response frame:
+	SSID: UA-guest
+	Supported rates: 6.0* 9.0 12.0* 18.0 24.0* 36.0 48.0 54.0 
+	DS Parameter set: channel 36
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [36 - 64] @ 23 dBm
+		Channels [100 - 140] @ 30 dBm
+	Power constraint: 0 dB
+	HT capabilities:
+		Capabilities: 0x1ef
+			RX LDPC
+			HT20/HT40
+			SM Power Save disabled
+			RX HT20 SGI
+			RX HT40 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 3839 bytes
+			No DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 36
+		 * secondary channel offset: above
+		 * STA channel width: any
+		 * RIFS: 1
+		 * HT protection: 20 MHz
+		 * non-GF present: 1
+		 * OBSS non-GF present: 1
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:c2:12 (on wlan0)
+	TSF: 96414025556 usec (1d, 02:46:54)
+	freq: 5180
+	beacon interval: 100
+	capability: ESS Privacy SpectrumMgmt (0x1111)
+	signal: -78.00 dBm
+	last seen: 0 ms ago
+	Information elements from Probe Response frame:
+	SSID: UAntwerpen
+	Supported rates: 6.0* 9.0 12.0* 18.0 24.0* 36.0 48.0 54.0 
+	DS Parameter set: channel 36
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [36 - 64] @ 23 dBm
+		Channels [100 - 140] @ 30 dBm
+	Power constraint: 0 dB
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: IEEE 802.1X
+		 * Capabilities: 4-PTKSA-RC 4-GTKSA-RC (0x0028)
+	HT capabilities:
+		Capabilities: 0x1ef
+			RX LDPC
+			HT20/HT40
+			SM Power Save disabled
+			RX HT20 SGI
+			RX HT40 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 3839 bytes
+			No DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 36
+		 * secondary channel offset: above
+		 * STA channel width: any
+		 * RIFS: 1
+		 * HT protection: 20 MHz
+		 * non-GF present: 1
+		 * OBSS non-GF present: 1
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 02:ca:ff:ee:ba:be (on wlan0)
+	TSF: 4143183016001 usec (47d, 22:53:03)
+	freq: 5180
+	beacon interval: 100
+	capability: IBSS (0x0002)
+	signal: -87.00 dBm
+	last seen: 0 ms ago
+	SSID: community-lab.net
+	Supported rates: 6.0* 9.0 12.0* 18.0 24.0* 36.0 48.0 54.0 
+	HT capabilities:
+		Capabilities: 0x11ce
+			HT20/HT40
+			SM Power Save disabled
+			RX HT40 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 3839 bytes
+			DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 8 usec (0x06)
+		HT TX/RX MCS rate indexes supported: 0-15
+	HT operation:
+		 * primary channel: 36
+		 * secondary channel offset: above
+		 * STA channel width: any
+		 * RIFS: 0
+		 * HT protection: no
+		 * non-GF present: 0
+		 * OBSS non-GF present: 0
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	WMM: information: 01 00
+BSS 04:1e:64:f2:13:b2 (on wlan0)
+	TSF: 153104614194 usec (1d, 18:31:44)
+	freq: 5220
+	beacon interval: 100
+	capability: ESS Privacy SpectrumMgmt ShortSlotTime (0x0511)
+	signal: -79.00 dBm
+	last seen: 0 ms ago
+	SSID: G233
+	Supported rates: 6.0* 9.0 12.0* 18.0 24.0* 36.0 48.0 54.0 
+	DS Parameter set: channel 44
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [36 - 64] @ 30 dBm
+		Channels [100 - 116] @ 30 dBm
+		Channels [132 - 140] @ 30 dBm
+	Power constraint: 0 dB
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: PSK
+		 * Capabilities: (0x0000)
+	HT capabilities:
+		Capabilities: 0x104e
+			HT20/HT40
+			SM Power Save disabled
+			RX HT40 SGI
+			No RX STBC
+			Max AMSDU length: 3839 bytes
+			DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 8 usec (0x06)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 44
+		 * secondary channel offset: above
+		 * STA channel width: any
+		 * RIFS: 1
+		 * HT protection: no
+		 * non-GF present: 1
+		 * OBSS non-GF present: 0
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	WMM:	 * Parameter version 1
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:b5:90 (on wlan0)
+	TSF: 78564147260 usec (0d, 21:49:24)
+	freq: 5260
+	beacon interval: 100
+	capability: ESS Privacy SpectrumMgmt (0x1111)
+	signal: -74.00 dBm
+	last seen: 1420 ms ago
+	SSID: eduroam
+	Supported rates: 6.0* 9.0 12.0* 18.0 24.0* 36.0 48.0 54.0 
+	DS Parameter set: channel 52
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [36 - 64] @ 23 dBm
+		Channels [100 - 140] @ 30 dBm
+	Power constraint: 0 dB
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: IEEE 802.1X
+		 * Capabilities: 4-PTKSA-RC 4-GTKSA-RC (0x0028)
+	HT capabilities:
+		Capabilities: 0x1ef
+			RX LDPC
+			HT20/HT40
+			SM Power Save disabled
+			RX HT20 SGI
+			RX HT40 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 3839 bytes
+			No DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 52
+		 * secondary channel offset: above
+		 * STA channel width: any
+		 * RIFS: 1
+		 * HT protection: no
+		 * non-GF present: 1
+		 * OBSS non-GF present: 0
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:b5:91 (on wlan0)
+	TSF: 78564147649 usec (0d, 21:49:24)
+	freq: 5260
+	beacon interval: 100
+	capability: ESS SpectrumMgmt (0x1101)
+	signal: -75.00 dBm
+	last seen: 1420 ms ago
+	SSID: UA-guest
+	Supported rates: 6.0* 9.0 12.0* 18.0 24.0* 36.0 48.0 54.0 
+	DS Parameter set: channel 52
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [36 - 64] @ 23 dBm
+		Channels [100 - 140] @ 30 dBm
+	Power constraint: 0 dB
+	HT capabilities:
+		Capabilities: 0x1ef
+			RX LDPC
+			HT20/HT40
+			SM Power Save disabled
+			RX HT20 SGI
+			RX HT40 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 3839 bytes
+			No DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 52
+		 * secondary channel offset: above
+		 * STA channel width: any
+		 * RIFS: 1
+		 * HT protection: no
+		 * non-GF present: 1
+		 * OBSS non-GF present: 0
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:b5:92 (on wlan0)
+	TSF: 78564147982 usec (0d, 21:49:24)
+	freq: 5260
+	beacon interval: 100
+	capability: ESS Privacy SpectrumMgmt (0x1111)
+	signal: -74.00 dBm
+	last seen: 1420 ms ago
+	SSID: UAntwerpen
+	Supported rates: 6.0* 9.0 12.0* 18.0 24.0* 36.0 48.0 54.0 
+	DS Parameter set: channel 52
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [36 - 64] @ 23 dBm
+		Channels [100 - 140] @ 30 dBm
+	Power constraint: 0 dB
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: IEEE 802.1X
+		 * Capabilities: 4-PTKSA-RC 4-GTKSA-RC (0x0028)
+	HT capabilities:
+		Capabilities: 0x1ef
+			RX LDPC
+			HT20/HT40
+			SM Power Save disabled
+			RX HT20 SGI
+			RX HT40 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 3839 bytes
+			No DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 52
+		 * secondary channel offset: above
+		 * STA channel width: any
+		 * RIFS: 1
+		 * HT protection: no
+		 * non-GF present: 1
+		 * OBSS non-GF present: 0
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:c0:70 (on wlan0)
+	TSF: 62418739260 usec (0d, 17:20:18)
+	freq: 5300
+	beacon interval: 100
+	capability: ESS Privacy SpectrumMgmt (0x1111)
+	signal: -69.00 dBm
+	last seen: 1140 ms ago
+	SSID: eduroam
+	Supported rates: 6.0* 9.0 12.0* 18.0 24.0* 36.0 48.0 54.0 
+	DS Parameter set: channel 60
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [36 - 64] @ 23 dBm
+		Channels [100 - 140] @ 30 dBm
+	Power constraint: 0 dB
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: IEEE 802.1X
+		 * Capabilities: 4-PTKSA-RC 4-GTKSA-RC (0x0028)
+	HT capabilities:
+		Capabilities: 0x1ef
+			RX LDPC
+			HT20/HT40
+			SM Power Save disabled
+			RX HT20 SGI
+			RX HT40 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 3839 bytes
+			No DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 60
+		 * secondary channel offset: above
+		 * STA channel width: any
+		 * RIFS: 1
+		 * HT protection: no
+		 * non-GF present: 1
+		 * OBSS non-GF present: 0
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:c0:71 (on wlan0)
+	TSF: 62418739648 usec (0d, 17:20:18)
+	freq: 5300
+	beacon interval: 100
+	capability: ESS SpectrumMgmt (0x1101)
+	signal: -69.00 dBm
+	last seen: 1140 ms ago
+	SSID: UA-guest
+	Supported rates: 6.0* 9.0 12.0* 18.0 24.0* 36.0 48.0 54.0 
+	DS Parameter set: channel 60
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [36 - 64] @ 23 dBm
+		Channels [100 - 140] @ 30 dBm
+	Power constraint: 0 dB
+	HT capabilities:
+		Capabilities: 0x1ef
+			RX LDPC
+			HT20/HT40
+			SM Power Save disabled
+			RX HT20 SGI
+			RX HT40 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 3839 bytes
+			No DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 60
+		 * secondary channel offset: above
+		 * STA channel width: any
+		 * RIFS: 1
+		 * HT protection: no
+		 * non-GF present: 1
+		 * OBSS non-GF present: 0
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:c0:72 (on wlan0)
+	TSF: 62418739999 usec (0d, 17:20:18)
+	freq: 5300
+	beacon interval: 100
+	capability: ESS Privacy SpectrumMgmt (0x1111)
+	signal: -69.00 dBm
+	last seen: 1140 ms ago
+	SSID: UAntwerpen
+	Supported rates: 6.0* 9.0 12.0* 18.0 24.0* 36.0 48.0 54.0 
+	DS Parameter set: channel 60
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [36 - 64] @ 23 dBm
+		Channels [100 - 140] @ 30 dBm
+	Power constraint: 0 dB
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: IEEE 802.1X
+		 * Capabilities: 4-PTKSA-RC 4-GTKSA-RC (0x0028)
+	HT capabilities:
+		Capabilities: 0x1ef
+			RX LDPC
+			HT20/HT40
+			SM Power Save disabled
+			RX HT20 SGI
+			RX HT40 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 3839 bytes
+			No DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 60
+		 * secondary channel offset: above
+		 * STA channel width: any
+		 * RIFS: 1
+		 * HT protection: no
+		 * non-GF present: 1
+		 * OBSS non-GF present: 0
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS dc:9f:db:48:ba:ee (on wlan0)
+	TSF: 737260032054 usec (8d, 12:47:40)
+	freq: 5500
+	beacon interval: 100
+	capability: ESS Privacy SpectrumMgmt ShortSlotTime (0x0511)
+	signal: -32.00 dBm
+	last seen: 890 ms ago
+	SSID: CONFINE-J
+	Supported rates: 6.0* 9.0 12.0* 18.0 24.0* 36.0 48.0 54.0 
+	DS Parameter set: channel 100
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [36 - 36] @ 20 dBm
+		Channels [40 - 40] @ 20 dBm
+		Channels [44 - 44] @ 20 dBm
+		Channels [48 - 48] @ 20 dBm
+		Channels [52 - 52] @ 20 dBm
+		Channels [56 - 56] @ 20 dBm
+		Channels [60 - 60] @ 20 dBm
+		Channels [64 - 64] @ 20 dBm
+		Channels [100 - 100] @ 30 dBm
+		Channels [104 - 104] @ 30 dBm
+		Channels [108 - 108] @ 30 dBm
+		Channels [112 - 112] @ 30 dBm
+		Channels [116 - 116] @ 30 dBm
+		Channels [120 - 120] @ 30 dBm
+		Channels [124 - 124] @ 30 dBm
+		Channels [128 - 128] @ 30 dBm
+		Channels [132 - 132] @ 30 dBm
+		Channels [136 - 136] @ 30 dBm
+		Channels [140 - 140] @ 30 dBm
+	Power constraint: 10 dB
+	RSN:	 * Version: 1
+		 * Group cipher: TKIP
+		 * Pairwise ciphers: CCMP TKIP
+		 * Authentication suites: PSK
+		 * Capabilities: (0x0000)
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-63, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 1, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 1, TXOP 1504 usec
+	HT capabilities:
+		Capabilities: 0x1ce
+			HT20/HT40
+			SM Power Save disabled
+			RX HT40 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 3839 bytes
+			No DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 8 usec (0x06)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 100
+		 * secondary channel offset: above
+		 * STA channel width: any
+		 * RIFS: 1
+		 * HT protection: no
+		 * non-GF present: 1
+		 * OBSS non-GF present: 0
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+BSS dc:9f:db:48:b8:eb (on wlan0)
+	TSF: 24206414848054 usec (280d, 04:00:14)
+	freq: 5520
+	beacon interval: 100
+	capability: ESS Privacy SpectrumMgmt ShortSlotTime (0x0511)
+	signal: -49.00 dBm
+	last seen: 770 ms ago
+	SSID: CONFINE-I
+	Supported rates: 6.0* 9.0 12.0* 18.0 24.0* 36.0 48.0 54.0 
+	DS Parameter set: channel 104
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [36 - 36] @ 20 dBm
+		Channels [40 - 40] @ 20 dBm
+		Channels [44 - 44] @ 20 dBm
+		Channels [48 - 48] @ 20 dBm
+		Channels [52 - 52] @ 20 dBm
+		Channels [56 - 56] @ 20 dBm
+		Channels [60 - 60] @ 20 dBm
+		Channels [64 - 64] @ 20 dBm
+		Channels [100 - 100] @ 30 dBm
+		Channels [104 - 104] @ 30 dBm
+		Channels [108 - 108] @ 30 dBm
+		Channels [112 - 112] @ 30 dBm
+		Channels [116 - 116] @ 30 dBm
+		Channels [120 - 120] @ 30 dBm
+		Channels [124 - 124] @ 30 dBm
+		Channels [128 - 128] @ 30 dBm
+		Channels [132 - 132] @ 30 dBm
+		Channels [136 - 136] @ 30 dBm
+		Channels [140 - 140] @ 30 dBm
+	Power constraint: 10 dB
+	RSN:	 * Version: 1
+		 * Group cipher: TKIP
+		 * Pairwise ciphers: CCMP TKIP
+		 * Authentication suites: PSK
+		 * Capabilities: (0x0000)
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-63, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 1, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 1, TXOP 1504 usec
+	HT capabilities:
+		Capabilities: 0x1ce
+			HT20/HT40
+			SM Power Save disabled
+			RX HT40 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 3839 bytes
+			No DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 8 usec (0x06)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 104
+		 * secondary channel offset: below
+		 * STA channel width: any
+		 * RIFS: 1
+		 * HT protection: no
+		 * non-GF present: 1
+		 * OBSS non-GF present: 0
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+BSS 84:d4:7e:27:a3:f0 (on wlan0)
+	TSF: 404395110477 usec (4d, 16:19:55)
+	freq: 5580
+	beacon interval: 100
+	capability: ESS Privacy SpectrumMgmt (0x1111)
+	signal: -75.00 dBm
+	last seen: 430 ms ago
+	SSID: eduroam
+	Supported rates: 6.0* 9.0 12.0* 18.0 24.0* 36.0 48.0 54.0 
+	DS Parameter set: channel 116
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [36 - 64] @ 23 dBm
+		Channels [100 - 140] @ 30 dBm
+	Power constraint: 0 dB
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: IEEE 802.1X
+		 * Capabilities: 4-PTKSA-RC 4-GTKSA-RC (0x0028)
+	HT capabilities:
+		Capabilities: 0x1ef
+			RX LDPC
+			HT20/HT40
+			SM Power Save disabled
+			RX HT20 SGI
+			RX HT40 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 3839 bytes
+			No DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 116
+		 * secondary channel offset: above
+		 * STA channel width: any
+		 * RIFS: 1
+		 * HT protection: no
+		 * non-GF present: 1
+		 * OBSS non-GF present: 0
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:a3:f1 (on wlan0)
+	TSF: 404395110865 usec (4d, 16:19:55)
+	freq: 5580
+	beacon interval: 100
+	capability: ESS SpectrumMgmt (0x1101)
+	signal: -75.00 dBm
+	last seen: 430 ms ago
+	SSID: UA-guest
+	Supported rates: 6.0* 9.0 12.0* 18.0 24.0* 36.0 48.0 54.0 
+	DS Parameter set: channel 116
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [36 - 64] @ 23 dBm
+		Channels [100 - 140] @ 30 dBm
+	Power constraint: 0 dB
+	HT capabilities:
+		Capabilities: 0x1ef
+			RX LDPC
+			HT20/HT40
+			SM Power Save disabled
+			RX HT20 SGI
+			RX HT40 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 3839 bytes
+			No DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 116
+		 * secondary channel offset: above
+		 * STA channel width: any
+		 * RIFS: 1
+		 * HT protection: no
+		 * non-GF present: 1
+		 * OBSS non-GF present: 0
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 84:d4:7e:27:a3:f2 (on wlan0)
+	TSF: 404395111216 usec (4d, 16:19:55)
+	freq: 5580
+	beacon interval: 100
+	capability: ESS Privacy SpectrumMgmt (0x1111)
+	signal: -75.00 dBm
+	last seen: 420 ms ago
+	SSID: UAntwerpen
+	Supported rates: 6.0* 9.0 12.0* 18.0 24.0* 36.0 48.0 54.0 
+	DS Parameter set: channel 116
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [36 - 64] @ 23 dBm
+		Channels [100 - 140] @ 30 dBm
+	Power constraint: 0 dB
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP
+		 * Authentication suites: IEEE 802.1X
+		 * Capabilities: 4-PTKSA-RC 4-GTKSA-RC (0x0028)
+	HT capabilities:
+		Capabilities: 0x1ef
+			RX LDPC
+			HT20/HT40
+			SM Power Save disabled
+			RX HT20 SGI
+			RX HT40 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 3839 bytes
+			No DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 4 usec (0x05)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 116
+		 * secondary channel offset: above
+		 * STA channel width: any
+		 * RIFS: 1
+		 * HT protection: no
+		 * non-GF present: 1
+		 * OBSS non-GF present: 0
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	Extended capabilities: Extended Channel Switching, 3, 6
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS 00:0c:42:c3:97:a2 (on wlan0)
+	TSF: 22876085964854 usec (264d, 18:28:05)
+	freq: 5660
+	beacon interval: 100
+	capability: ESS Privacy ShortPreamble ShortSlotTime (0x0431)
+	signal: -66.00 dBm
+	last seen: 410 ms ago
+	SSID: CONFINE-H
+	Supported rates: 6.0* 9.0 12.0 18.0 24.0 36.0 48.0 54.0 
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	HT capabilities:
+		Capabilities: 0x4e
+			HT20/HT40
+			SM Power Save disabled
+			RX HT40 SGI
+			No RX STBC
+			Max AMSDU length: 3839 bytes
+			No DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: No restriction (0x00)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	RSN:	 * Version: 1
+		 * Group cipher: CCMP
+		 * Pairwise ciphers: CCMP TKIP
+		 * Authentication suites: PSK
+		 * Capabilities: Peerkey-enabled SPP-AMSDU-capable SPP-AMSDU-required (0x0f00)
+	HT operation:
+		 * primary channel: 132
+		 * secondary channel offset: above
+		 * STA channel width: any
+		 * RIFS: 0
+		 * HT protection: no
+		 * non-GF present: 0
+		 * OBSS non-GF present: 0
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+	WMM:	 * Parameter version 1
+		 * BE: CW 15-1023, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 2, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 2, TXOP 1504 usec
+BSS dc:9f:db:48:ed:51 (on wlan0)
+	TSF: 796364854 usec (0d, 00:13:16)
+	freq: 5660
+	beacon interval: 100
+	capability: ESS Privacy SpectrumMgmt ShortSlotTime (0x0511)
+	signal: -52.00 dBm
+	last seen: 350 ms ago
+	SSID: CONFINE-K
+	Supported rates: 6.0* 9.0 12.0* 18.0 24.0* 36.0 48.0 54.0 
+	DS Parameter set: channel 132
+	TIM: DTIM Count 0 DTIM Period 1 Bitmap Control 0x0 Bitmap[0] 0x0
+	Country: BE	Environment: Indoor/Outdoor
+		Channels [36 - 36] @ 20 dBm
+		Channels [40 - 40] @ 20 dBm
+		Channels [44 - 44] @ 20 dBm
+		Channels [48 - 48] @ 20 dBm
+		Channels [52 - 52] @ 20 dBm
+		Channels [56 - 56] @ 20 dBm
+		Channels [60 - 60] @ 20 dBm
+		Channels [64 - 64] @ 20 dBm
+		Channels [100 - 100] @ 30 dBm
+		Channels [104 - 104] @ 30 dBm
+		Channels [108 - 108] @ 30 dBm
+		Channels [112 - 112] @ 30 dBm
+		Channels [116 - 116] @ 30 dBm
+		Channels [120 - 120] @ 30 dBm
+		Channels [124 - 124] @ 30 dBm
+		Channels [128 - 128] @ 30 dBm
+		Channels [132 - 132] @ 30 dBm
+		Channels [136 - 136] @ 30 dBm
+		Channels [140 - 140] @ 30 dBm
+	Power constraint: 10 dB
+	RSN:	 * Version: 1
+		 * Group cipher: TKIP
+		 * Pairwise ciphers: CCMP TKIP
+		 * Authentication suites: PSK
+		 * Capabilities: (0x0000)
+	WMM:	 * Parameter version 1
+		 * u-APSD
+		 * BE: CW 15-63, AIFSN 3
+		 * BK: CW 15-1023, AIFSN 7
+		 * VI: CW 7-15, AIFSN 1, TXOP 3008 usec
+		 * VO: CW 3-7, AIFSN 1, TXOP 1504 usec
+	HT capabilities:
+		Capabilities: 0x1ce
+			HT20/HT40
+			SM Power Save disabled
+			RX HT40 SGI
+			TX STBC
+			RX STBC 1-stream
+			Max AMSDU length: 3839 bytes
+			No DSSS/CCK HT40
+		Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+		Minimum RX AMPDU time spacing: 8 usec (0x06)
+		HT RX MCS rate indexes supported: 0-15
+		HT TX MCS rate indexes are undefined
+	HT operation:
+		 * primary channel: 132
+		 * secondary channel offset: above
+		 * STA channel width: any
+		 * RIFS: 1
+		 * HT protection: no
+		 * non-GF present: 1
+		 * OBSS non-GF present: 0
+		 * dual beacon: 0
+		 * dual CTS protection: 0
+		 * STBC beacon: 0
+		 * L-SIG TXOP Prot: 0
+		 * PCO active: 0
+		 * PCO phase: 0
+
