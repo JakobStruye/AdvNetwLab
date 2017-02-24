@@ -1,0 +1,7 @@
+the tcp connection waits for acks while sending which leads to less collisions than in the udp case which makes it better for low bitrates.
+
+as the bitrates go up, collisions and retransmissions increase and tcp starts to suffer and udp pulls out ahead (affects tcp more than it does udp).
+
+because both tcp and udp have to be sent twice, first from STA1 to the AP and then from the AP to STA2, the achieved throughput is about half of the achieved throughput in the first experiment.
+
+
