@@ -1,0 +1,12 @@
+Let's again consider the first ping request (packet 3878). It contains the following addresses.
+\begin{lstlisting}
+    Receiver address: Sparklan_26:13:c2 (00:0e:8e:26:13:c2)
+    Destination address: Sparklan_26:13:c2 (00:0e:8e:26:13:c2)
+    Transmitter address: Sparklan_20:83:df (00:0e:8e:20:83:df)
+    Source address: Sparklan_20:83:df (00:0e:8e:20:83:df)
+    BSS Id: 8a:89:24:d2:26:b8 (8a:89:24:d2:26:b8)
+\end{lstlisting}
+
+The source and transmitter addresses and the destination and receiver addresses are the same. This indicates the frame was sent directly from original source to final destination without any intermediary stops. There is no longer an AP. The BSS Id is still filled in but is a random address. %http://sourcedaddy.com/networking/bssid-ssid-and-essid.html
+The STA address is no longer part of the header. \\ \\
+Note that there are no longer any duplicates as there is no AP to repeat the frames.
