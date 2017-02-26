@@ -1,3 +1,4 @@
-The resulting udp and tcp streams (with rts/cts) have a throughput that is consistently lower than their non-rts/cts counterparts. Adding the rts/cts mechanism does not really help because the theoretical datarate is hard to achieve under normal circumstances. 
+\includegraphics[width=0.5\textwidth]{traces/L3-3-1-tput.pdf}
+\includegraphics[width=0.5\textwidth]{traces/L3-3-1-usage.pdf}
 
-in this case it is no different and we see that the added overhead of rts/cts slows down the realised throughput of the stream even more.
+For both TCP and UDP throughput is consistently lower with RTS/CTS enabled. The only communication in our tests is direct traffic between STA1 and AP (only STA1 $\rightarrow$ AP in case of UDP). There were few collisions even without RTS/CTS. This means RTS/CTS mainly adds overhead, leading to lower throughput. \\ \\ Even with RTS/CTS enabled UDP still outperforms TCP: TCP's lower performance is caused by its additional overhead and congestion control, which is not changed by having RTS/CTS enabled.

@@ -1,5 +1,4 @@
-udp is hoger : minder overhead, gn congestion control dus resultaten zijn als verwacht
-throughput stijgt omdat de bitrate ook omhoog gaat
-
-
-usage verlaagt: sneller sturen -> meer retransmits en minder usage
+\includegraphics[width=0.5\textwidth]{traces/L3-1-4-tput.pdf}
+\includegraphics[width=0.5\textwidth]{traces/L3-1-4-usage.pdf}
+UDP's throughput is consistenly higher than TCP's. TCP has larger headers so more overhead. More importantly, TCP's congestion control mechanisms lead to reduced throughput. Throughput grows together with bitrate: the network supports sending more bits per second with higher bitrates. \\ \\
+The throughput does not grow as quickly as the bitrate: with higher bitrates the bits are sent faster and bits are more likely to get lost. Due to this additional loss doubling the bitrate does not double the observed throughput. This translates to a decreasing usage with increasing bitrate.
