@@ -1,6 +1,0 @@
-On the trace file captured on STA1, the ping requests are duplicates as well as some Neighbor advertisements and some neighbor sollicitations being duplicates.\\
-The ping requests in traces/L1-5-1.STA1.pcap are those packets with number 3,4 and 6,7. \\ \\
-Neighbor advertisements in 10,11 and 16,17 are captured twice as well as the neighbor solicitations in 12,13.\\
-Everything that is sent by STA1 appears in the dump file twice.\\ \\
-Similarly, for the STA2 dump in traces/L1-5-1.STA2.pcap, everything that is sent by STA2 is duplicated. \\
-In this case, that means the neighbor advertisement in 2,3; the ping replies in 5,6 and 8,9; the neighbor solicitation in 10,11, the neighbor advertisement in 14,15 and the neighbor solicitation in 16,17.

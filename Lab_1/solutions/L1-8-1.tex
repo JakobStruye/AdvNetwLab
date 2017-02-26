@@ -1,1 +1,2 @@
-The results are the same as one would expect from a wired setup. The dump of the B network yields no results, while the dump of the A network shows the packets we transmitted.
+Setup A is similar to having each one of the involved interfaces connected to the same wired switch. All of the packets can be observed on all of the interfaces. \\ \\
+Setup B compares to having STA1 wlan1 and AP wlan0 on one wired switch and the other three interfaces together on another, completely separate switch. Packets sent over one of the two switches are not observed by the interfaces connected only to the other one. Setup B's trace indeed shows 0 packets.

@@ -1,1 +1,1 @@
-MAC headers are the same ???
+Each pair of duplicates has the same source MAC addresses and destination MAC addresses. \\ For a ping request going from STA1 to STA2, the src and dst MAC addresses are of STA1 and STA2, respectively. The AP's MAC address does not appear here, even though the packet was sent via the AP. This explains the duplicates: tcpdump logs both the packet sent by STA1 to AP (outgoing at STA1) and the packet sent by AP to STA2 (incoming at STA1, even though it was not the intended receiver).

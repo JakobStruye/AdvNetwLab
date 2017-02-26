@@ -1,1 +1,3 @@
-We do not notice duplicate entries because the packets do not pass through the AP: they are not redirected through the AP and thus can't be detected twice by STA1.
+
+
+We do not observe duplicate entries as the packets are not retransmitted by the AP: the AP is the intended receiver. There are no intermediary hosts in the transmission. As STA1 cannot receive its own packets while transmitting them, there are no duplicates in the trace.
