@@ -1,0 +1,2 @@
+The RTS/CTS exchange in packet slots 1611 and 1612 protects the ping request from STA3 to STA1 in slot 1613. The first ping exchange did not have a RTS/CTS protection because the size of the packets was not high enough at that point.\\
+In general, packets that exceed 1000 bytes in size are protected by a RTS/CTS, because that is what we set the threshold to.
