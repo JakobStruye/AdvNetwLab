@@ -1,0 +1,194 @@
+No.     Time           Source                Destination           Protocol Length Info
+   1611 12.731264      Routerbo_12:1b:a5 (d4:ca:6d:12:1b:a5) (TA) Routerbo_12:1b:a4 (d4:ca:6d:12:1b:a4) (RA) 802.11   34     Request-to-send, Flags=........
+
+Frame 1611: 34 bytes on wire (272 bits), 34 bytes captured (272 bits)
+    Encapsulation type: IEEE 802.11 plus radiotap radio header (23)
+    Arrival Time: Feb 22, 2017 11:55:30.999037000 CET
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1487760930.999037000 seconds
+    [Time delta from previous captured frame: 0.000324000 seconds]
+    [Time delta from previous displayed frame: 0.000324000 seconds]
+    [Time since reference or first frame: 12.731264000 seconds]
+    Frame Number: 1611
+    Frame Length: 34 bytes (272 bits)
+    Capture Length: 34 bytes (272 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: radiotap:wlan_radio:wlan]
+Radiotap Header v0, Length 18
+    Header revision: 0
+    Header pad: 0
+    Header length: 18
+    Present flags
+        .... .... .... .... .... .... .... ...0 = TSFT: Absent
+        .... .... .... .... .... .... .... ..1. = Flags: Present
+        .... .... .... .... .... .... .... .1.. = Rate: Present
+        .... .... .... .... .... .... .... 1... = Channel: Present
+        .... .... .... .... .... .... ...0 .... = FHSS: Absent
+        .... .... .... .... .... .... ..1. .... = dBm Antenna Signal: Present
+        .... .... .... .... .... .... .0.. .... = dBm Antenna Noise: Absent
+        .... .... .... .... .... .... 0... .... = Lock Quality: Absent
+        .... .... .... .... .... ...0 .... .... = TX Attenuation: Absent
+        .... .... .... .... .... ..0. .... .... = dB TX Attenuation: Absent
+        .... .... .... .... .... .0.. .... .... = dBm TX Power: Absent
+        .... .... .... .... .... 1... .... .... = Antenna: Present
+        .... .... .... .... ...0 .... .... .... = dB Antenna Signal: Absent
+        .... .... .... .... ..0. .... .... .... = dB Antenna Noise: Absent
+        .... .... .... .... .1.. .... .... .... = RX flags: Present
+        .... .... .... .0.. .... .... .... .... = Channel+: Absent
+        .... .... .... 0... .... .... .... .... = MCS information: Absent
+        .... .... ...0 .... .... .... .... .... = A-MPDU Status: Absent
+        .... .... ..0. .... .... .... .... .... = VHT information: Absent
+        ...0 0000 00.. .... .... .... .... .... = Reserved: 0x00000000
+        ..0. .... .... .... .... .... .... .... = Radiotap NS next: False
+        .0.. .... .... .... .... .... .... .... = Vendor NS next: False
+        0... .... .... .... .... .... .... .... = Ext: Absent
+    Flags: 0x00
+        .... ...0 = CFP: False
+        .... ..0. = Preamble: Long
+        .... .0.. = WEP: False
+        .... 0... = Fragmentation: False
+        ...0 .... = FCS at end: False
+        ..0. .... = Data Pad: False
+        .0.. .... = Bad FCS: False
+        0... .... = Short GI: False
+    Data Rate: 24,0 Mb/s
+    Channel frequency: 5180 [A 36]
+    Channel flags: 0x0140, Orthogonal Frequency-Division Multiplexing (OFDM), 5 GHz spectrum
+        .... .... ...0 .... = Turbo: False
+        .... .... ..0. .... = Complementary Code Keying (CCK): False
+        .... .... .1.. .... = Orthogonal Frequency-Division Multiplexing (OFDM): True
+        .... .... 0... .... = 2 GHz spectrum: False
+        .... ...1 .... .... = 5 GHz spectrum: True
+        .... ..0. .... .... = Passive: False
+        .... .0.. .... .... = Dynamic CCK-OFDM: False
+        .... 0... .... .... = Gaussian Frequency Shift Keying (GFSK): False
+        ...0 .... .... .... = GSM (900MHz): False
+        ..0. .... .... .... = Static Turbo: False
+        .0.. .... .... .... = Half Rate Channel (10MHz Channel Width): False
+        0... .... .... .... = Quarter Rate Channel (5MHz Channel Width): False
+    SSI Signal: -62 dBm
+    Antenna: 1
+    RX flags: 0x0000
+        .... .... .... .... .... ..0. = Bad PLCP: False
+802.11 radio information
+    PHY type: 802.11a (5)
+    Turbo type: Non-turbo (0)
+    Data rate: 24,0 Mb/s
+    Channel: 36
+    Frequency: 5180 MHz
+    Signal strength (dBm): -62 dBm
+IEEE 802.11 Request-to-send, Flags: ........
+    Type/Subtype: Request-to-send (0x001b)
+    Frame Control Field: 0xb400
+        .... ..00 = Version: 0
+        .... 01.. = Type: Control frame (1)
+        1011 .... = Subtype: 11
+        Flags: 0x00
+            .... ..00 = DS status: Not leaving DS or network is operating in AD-HOC mode (To DS: 0 From DS: 0) (0x00)
+            .... .0.. = More Fragments: This is the last fragment
+            .... 0... = Retry: Frame is not being retransmitted
+            ...0 .... = PWR MGT: STA will stay up
+            ..0. .... = More Data: No data buffered
+            .0.. .... = Protected flag: Data is not protected
+            0... .... = Order flag: Not strictly ordered
+    .000 0001 1000 1000 = Duration: 392 microseconds
+    Receiver address: Routerbo_12:1b:a4 (d4:ca:6d:12:1b:a4)
+    Transmitter address: Routerbo_12:1b:a5 (d4:ca:6d:12:1b:a5)
+
+No.     Time           Source                Destination           Protocol Length Info
+   1612 12.731306                            Routerbo_12:1b:a5 (d4:ca:6d:12:1b:a5) (RA) 802.11   28     Clear-to-send, Flags=........
+
+Frame 1612: 28 bytes on wire (224 bits), 28 bytes captured (224 bits)
+    Encapsulation type: IEEE 802.11 plus radiotap radio header (23)
+    Arrival Time: Feb 22, 2017 11:55:30.999079000 CET
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1487760930.999079000 seconds
+    [Time delta from previous captured frame: 0.000042000 seconds]
+    [Time delta from previous displayed frame: 0.000042000 seconds]
+    [Time since reference or first frame: 12.731306000 seconds]
+    Frame Number: 1612
+    Frame Length: 28 bytes (224 bits)
+    Capture Length: 28 bytes (224 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: radiotap:wlan_radio:wlan]
+Radiotap Header v0, Length 18
+    Header revision: 0
+    Header pad: 0
+    Header length: 18
+    Present flags
+        .... .... .... .... .... .... .... ...0 = TSFT: Absent
+        .... .... .... .... .... .... .... ..1. = Flags: Present
+        .... .... .... .... .... .... .... .1.. = Rate: Present
+        .... .... .... .... .... .... .... 1... = Channel: Present
+        .... .... .... .... .... .... ...0 .... = FHSS: Absent
+        .... .... .... .... .... .... ..1. .... = dBm Antenna Signal: Present
+        .... .... .... .... .... .... .0.. .... = dBm Antenna Noise: Absent
+        .... .... .... .... .... .... 0... .... = Lock Quality: Absent
+        .... .... .... .... .... ...0 .... .... = TX Attenuation: Absent
+        .... .... .... .... .... ..0. .... .... = dB TX Attenuation: Absent
+        .... .... .... .... .... .0.. .... .... = dBm TX Power: Absent
+        .... .... .... .... .... 1... .... .... = Antenna: Present
+        .... .... .... .... ...0 .... .... .... = dB Antenna Signal: Absent
+        .... .... .... .... ..0. .... .... .... = dB Antenna Noise: Absent
+        .... .... .... .... .1.. .... .... .... = RX flags: Present
+        .... .... .... .0.. .... .... .... .... = Channel+: Absent
+        .... .... .... 0... .... .... .... .... = MCS information: Absent
+        .... .... ...0 .... .... .... .... .... = A-MPDU Status: Absent
+        .... .... ..0. .... .... .... .... .... = VHT information: Absent
+        ...0 0000 00.. .... .... .... .... .... = Reserved: 0x00000000
+        ..0. .... .... .... .... .... .... .... = Radiotap NS next: False
+        .0.. .... .... .... .... .... .... .... = Vendor NS next: False
+        0... .... .... .... .... .... .... .... = Ext: Absent
+    Flags: 0x00
+        .... ...0 = CFP: False
+        .... ..0. = Preamble: Long
+        .... .0.. = WEP: False
+        .... 0... = Fragmentation: False
+        ...0 .... = FCS at end: False
+        ..0. .... = Data Pad: False
+        .0.. .... = Bad FCS: False
+        0... .... = Short GI: False
+    Data Rate: 24,0 Mb/s
+    Channel frequency: 5180 [A 36]
+    Channel flags: 0x0140, Orthogonal Frequency-Division Multiplexing (OFDM), 5 GHz spectrum
+        .... .... ...0 .... = Turbo: False
+        .... .... ..0. .... = Complementary Code Keying (CCK): False
+        .... .... .1.. .... = Orthogonal Frequency-Division Multiplexing (OFDM): True
+        .... .... 0... .... = 2 GHz spectrum: False
+        .... ...1 .... .... = 5 GHz spectrum: True
+        .... ..0. .... .... = Passive: False
+        .... .0.. .... .... = Dynamic CCK-OFDM: False
+        .... 0... .... .... = Gaussian Frequency Shift Keying (GFSK): False
+        ...0 .... .... .... = GSM (900MHz): False
+        ..0. .... .... .... = Static Turbo: False
+        .0.. .... .... .... = Half Rate Channel (10MHz Channel Width): False
+        0... .... .... .... = Quarter Rate Channel (5MHz Channel Width): False
+    SSI Signal: -41 dBm
+    Antenna: 1
+    RX flags: 0x0000
+        .... .... .... .... .... ..0. = Bad PLCP: False
+802.11 radio information
+    PHY type: 802.11a (5)
+    Turbo type: Non-turbo (0)
+    Data rate: 24,0 Mb/s
+    Channel: 36
+    Frequency: 5180 MHz
+    Signal strength (dBm): -41 dBm
+IEEE 802.11 Clear-to-send, Flags: ........
+    Type/Subtype: Clear-to-send (0x001c)
+    Frame Control Field: 0xc400
+        .... ..00 = Version: 0
+        .... 01.. = Type: Control frame (1)
+        1100 .... = Subtype: 12
+        Flags: 0x00
+            .... ..00 = DS status: Not leaving DS or network is operating in AD-HOC mode (To DS: 0 From DS: 0) (0x00)
+            .... .0.. = More Fragments: This is the last fragment
+            .... 0... = Retry: Frame is not being retransmitted
+            ...0 .... = PWR MGT: STA will stay up
+            ..0. .... = More Data: No data buffered
+            .0.. .... = Protected flag: Data is not protected
+            0... .... = Order flag: Not strictly ordered
+    .000 0001 0101 1100 = Duration: 348 microseconds
+    Receiver address: Routerbo_12:1b:a5 (d4:ca:6d:12:1b:a5)
