@@ -1,0 +1,9 @@
+We observed packets of both ping sessions, from the first session only the replies were caught on the monitor interface and for the second session, all ping packets were seen by the monitor.\\
+%
+Not seeing the ping requests of the first ping session could be due to failed demodulations at the monitor, causing it to be not be able to detect the modulated
+messages sent by STA1 in the first ping session. Because the second ping transmission does originate at STA2, it is less of an issue and that ping traffic is captured without issue.
+%
+The sniffer machine is not in range of the target wireless devices, or there's too much interference, so the sniffer machine's radio
+can't successfully demodulate the transmissions. Note that the increasing use of beamforming helps devices steer their RF energy right
+to where the intended receiver is, which means less of that energy goes to where the sniffer machine is, meaning the sniffer will
+get a worse signal:noise ratio, and less likelihood of demodulating packets sent at the highest data rates.
