@@ -1,0 +1,9 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+00:0E:8E:20:83:DF, 2017-03-01 09:56:02, 2017-03-01 10:00:28, 36,  54, WEP , WEP, OPN, -44,     2596,        0,   0.  0.  0.  0,   7, wmn-1-A, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+D4:CA:6D:12:1B:A5, 2017-03-01 09:58:26, 2017-03-01 09:58:26,   0,        4, 00:0E:8E:20:83:DF,
+00:0E:8E:26:13:C2, 2017-03-01 09:56:20, 2017-03-01 10:00:28, -58,        9, 00:0E:8E:20:83:DF,
+00:0E:8E:26:13:B0, 2017-03-01 09:56:20, 2017-03-01 10:00:28, -20,        9, 00:0E:8E:20:83:DF,
+
