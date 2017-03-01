@@ -1,9 +1,13 @@
 The purpose of each of these frames:
 \begin{itemize}
-\item Request-To-Send packet
-\item Clear-To-Send packet
-\item 802.11 Block Ack
-\item Acknowledgement, ie 2259
-\item Probe Response ie 2601
-\item Probe Request ie 2740
+\item Action, ie 4380 : Action Frames are a type of  management frame used to trigger an action in the cell. In this case, a request to group ACK's (add block ack request) into frames before sending them.
+\item Request-To-Send packet 2294 : RTS frames are used in the RTS/CTS mechanism and allow stations to request the medium for an amount of time. During that time, the station will be able to send uninterrupted and / or without another station becoming active and causing interference.
+\item Clear-To-Send packet 2295 : CTS confirms a RTS request, granting a station the medium for some amount of time.
+\item 802.11 Block Ack 2544 : Acknowledgements of multiple frames, grouped together into one block ack packet.
+\item Acknowledgement, ie 2259 : used to acknowledge the reception of a frame or packet.
+\item Probe Response ie 2601 : Response to a probe request, contains the SSID of the network, information about rates, the kind of network (ad hoc or managed by AP) and the mac address of the AP if there is one, along with various other statistics about the network, in this case about eduroam.
+\item Probe Request ie 2740 : Packet broadcast by a station that wants to know what SSID's are available. It is possible for the wanted SSID to be specified in the probe request, in which case we would call it a directed probe request. In this case, the request was simply broadcast.
+\item data = icmp ??
+\item neighbour discovery stuff?
+\item VHT NDP Announcement ie 716 : 802.11ac specific, used in the VHT sounding procedure and beamforming.
 \end{itemize}
