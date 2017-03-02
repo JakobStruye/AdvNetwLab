@@ -1,10 +1,8 @@
-278: broadcasted probe request for the ssid wmn-1-A sent by STA1
-279: the answer is from AP to STA1 and contains the ssid as well
-
-in the association request <pkt id> the ssid is still listed. 
-further communication such as association requests also contain the ssid
-
-only broadcasts are now gone such as pkt 5 in the first L411
-
-
--- only authentication seen
+The SSID itself can still be seen in following packet / frame types, despite SSID hiding:
+\begin{itemize}
+\item PacketID 455  , Probe Request
+\item PacketID 456  , Probe Response
+\item PacketID 617  , Association Request
+\end{itemize}
+The beacon frames sent by our AP can no longer be used to determine the SSID but other traffic still works.
+With the parameter being "ignore_broadcast_ssid", it was to be expected only the beacon frames would no longer contain the SSID.
