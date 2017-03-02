@@ -1,5 +1,5 @@
 For this exercise, we will be comparing packet 2 from traces/L2-4-1.36.pcap and packet 2 from traces/L2-5-1.STA1.pcap.
-For the purpose of comparing the WLAN management frames, I have included them below:
+They are included below for convenience:
 
 For the beacon frame captured in  exercise 4:
 \begin{lstlisting}
@@ -53,7 +53,7 @@ IEEE 802.11 wireless LAN management frame
             Partial Virtual Bitmap: 00
 \end{lstlisting}
 %
-for the beacon frame captured in exercise 5:
+For the beacon frame captured in exercise 5:
 \begin{lstlisting}
 IEEE 802.11 wireless LAN management frame
     Fixed parameters (12 bytes)
@@ -108,10 +108,9 @@ IEEE 802.11 wireless LAN management frame
                 .000 .... = Reserved: 0x00
 \end{lstlisting}
 %
-A first difference we observed is that the capabilities information beacon frame captured
-in exercise 5 contains different capabilities information than the one captured in exercise 4:
-the ex5 beacon frame shows that the sender of the beacon frame is a STA and that the network is
-an ad-hoc network, while in exercise 4 the capabilities reflect that the transmitter is an AP
-and the network is not ad-hoc.\\
-For the tagged parameters section, the ex5 beacon is bigger. It contains some IBSS parameters (ATIM) and vendor specifici information about the ad-hoc network.
- In the ex4 beacon, the tagged parameters contain information about the channel and the Traffic Indication Map.
+A first difference we observed is in the capabilities information parameters:
+the ad-hoc beacon frame shows that the sender of the beacon frame is a STA and that the network is
+an ad-hoc network, while the AP's capabilities reflect that the transmitter is an AP
+and the network is not in an IBSS (i.e. not ad-hoc).\\
+For the tagged parameters section, the two contain different parameter sets, making the ad-hoc one 4 bytes longer. The ad-hoc frame contains an IBSS parameter set with the Announcement Traffic Indication Message (ATIM) window and vendor specificic information parameters concerning Quality of Service.
+ In the AP beacon, the tagged parameter sets contain information about the channel and the Traffic Indication Map.
