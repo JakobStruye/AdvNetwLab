@@ -1,5 +1,5 @@
-No, the behaviour is largely the same: we again capture some icmp traffic but it is again not the complete conversation.
-Because the stations are using the 36 channel (albeit with 40 MHz bands) and we are capturing on channel 36, we capture some icmp packets.
+No, the behaviour is largely the same: we again capture some ICMP traffic but it is again not the complete conversation. Note that we did manage to capture one ICMP packet (\#262) from STA2 this time, showing that this is not impossible. Also interesting, but unrelated to the 40MHz channel is that one request in the second exchange was captured twice (\#1193 and \#1194). The second instance indicates that it is a retransmission, meaning the monitor was able to capture the first transmission while the intended receiver was not. \\ \\
 %
-The 40 MHz wide bands indicate that the network has a "main" channel, in this case being 36, and extra space to be used if need be.
-Because our icmp traffic is not enough to fill up the main channel, the extra space remains (largely) unused and we thus observe the same behaviour as in the previous exercise where we only capture part of the icmp exchange. 
+Even though we now in theory only monitor half of the used channel, we did not capture any fewer ICMP packets. This is because when combining two 20MHz channels into one 40MHz channel, one of the two is used as the main channel and the other becomes a secondary channel. The secondary channel is only used when needed. '5180 HT40+' means 'use 5180 as the main channel and the one above it as secondary'.
+%
+Because our ICMP traffic is by far not enough to saturate the main channel, the secondary channel remains (largely) unused and we thus observe a capture similar to the previous exercise.
