@@ -1,2 +1,8 @@
+In the first dump, when the station sent an authentication frame (pkt ID 2666) it was
+followed by an authentication frame (pkt ID 2668) indicating the succesful authentication
+of STA with AP in the WLAN management frame status code.\\
+In the second case, with mac filtering enabled and configured to not allow STA1's wlan0 to connect,
+the authentication frame(pkt ID 464) sent by STA1 is met with an authentication frame(pkt ID 466) sent by the AP
+with a status code 0x0001 signalling an unspecified failure which prevents the establishment of STA's connection with AP.
 in de eerdere kreeg authentication als reply succesful, nu is het unspecified failure
 <pkt ids>
