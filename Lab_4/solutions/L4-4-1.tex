@@ -1,2 +1,3 @@
-Difference : WEP parameters 4 bytes + 4 bytes that dont show up when you look at wep params in the pkt
-IV en key index voor data, WEP ICV na data maar voor fcs
+The difference in size between the decrypted encrypted packet with ID 434 in traces/L4-3-1.STA2.wep.pcap and the regular (non-WEP) packet with ID 353 in traces/L4-3-1.STA2.pcap is 8 bytes.
+The extra 8 bytes that the decrypted encrypted packet has are listed in it's IEEE 802.11 Data header, as the WEP parameters. These WEP parameters include an initialisation vector
+that is 3 bytes in length, a key index for 1 byte and also a WEP ICV that is 4 bytes long and is added after the encrypted data in the packet and before the frame check sequence.
