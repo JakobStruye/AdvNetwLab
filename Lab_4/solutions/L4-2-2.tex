@@ -1,1 +1,4 @@
-Mac address spoof. either two mac addresses will be on the network causing problems and crashing the network or the spoofed mac address will not be present at the time granting the attacker access to the network.
+This security measure can be circumvented by spoofing our MAC-address to be among those listed in the accepted MAC addresses. \\ \\In the case that the original device
+as well as the one we're currently spoofed as are present in the network, problems will arise in the network and things will break (the manner in which they break is
+dependent on the type of APs and drivers used.). In the second case, when the original device is no longer present in the network
+(this could be ensured by executing a deauthentication attack on the original device), the attacker will be able to access the network using the spoofed MAC address.
