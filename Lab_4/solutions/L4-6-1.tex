@@ -1,0 +1,7 @@
+The deassociation attack caused the ping session to be interrupted. After 5 seconds, the station was able to reassociate with the AP and resume the ping traffic.
+Repeating the attack some time later again caused a 5 second interruption in ping traffic. \\ \\A second attempt at the exercise showed a 22 second delay and not a 5 second delay.
+%
+We found that reestablishment of the connection is a function of how aggressively the client attempts to reauthenticate and any higher-level timeouts or backoffs and varying network quality
+that may suppress the demand for communication and conclude that that is what leads to the difference in the time needed to be able to resume the ping session.\\ \\
+% %source: http://users.csc.calpoly.edu/~bellardo/pubs/usenix-sec03-80211dos-html/aio.html -- deauthentication header
+The main thing to note for the ping session is that it was interrupted for a short time but when the attack ceased, the ping session resumed after the STA reassociated with the AP.
