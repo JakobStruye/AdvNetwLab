@@ -1,8 +1,8 @@
 The SSID itself can still be seen in following packet / frame types, despite SSID hiding:
 \begin{itemize}
-\item PacketID 455  , Probe Request
-\item PacketID 456  , Probe Response
-\item PacketID 617  , Association Request
+\item Probe Request (packet 455)
+\item Probe Response (packet 456)
+\item Association Request (packet 617)
 \end{itemize}
-The beacon frames sent by our AP can no longer be used to determine the SSID but other traffic still works.
+The SSID was only removed from the broadcast beacon frames, the others are unchanged. Note that the beacon frames are still sent. In Wireshark's packet info field the SSID is shown as "Broadcast" but further inspection of the packet shows the SSID field is simply empty.
 With the parameter being "ignore\_broadcast\_ssid", it was to be expected only the beacon frames would no longer contain the SSID.
