@@ -1,3 +1,1 @@
-In our case, the ICMPv6 frames and the ARP frames are encrypted.
-This can be seen in the WEP dump file (traces/L4-3-1.STA2.wep.pcap) in packetID 434, the packet that matches it in the non-WEP situation (traces/L4-3-1.STA2.pcap) is packet ID 353.
-Both packets are preceded by the same sequence of traffic between STA1 and AP, the packet in question is the first ICMPv6 packet and is encrypted in the WEP case.
+In our case, the ICMP echo request (packet 1415) and reply (packet 1419) frames, the ARP frames (packet 1408) and ICMPv6 packets (Neighbor solication in packet 445, Multicast Listener Report Message in packet 434, Router Solication in packet 477) are encrypted.
