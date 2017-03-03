@@ -1,0 +1,14 @@
+After seeing the first set of ping messages (though, we did not manage to decrypt them all using Wireshark), we see 128 de-authentication messages in the dump file (traces/L4-6-1.STA1.pcap).
+Out of those 128 packets, 64 are sent to the AP by what appears to be STA, but it is actually the attacker that is spoofing it's MAC address to be equal to STA1's wlan1 interface and the
+remaining 64 are sent to the STA1 by what appears to be the AP, but it is again the attacker spoofing it's MAC address to be equal to AP's.\\ \\
+%
+In our dump file (/traces/L4-6-1.STA1.pcap) we can see a reassociation that starts at packetID 502 (after a first attack, but the packets before the first attack are less clear
+because we could not decrypt the first ping session.) that is followed by a few pings exchanges with the last reply arriving in packetID 765. After this packet 765 we again started
+a de-association attack, which starts with the packet with ID 791 that is sent by the attacker (spoofing as the AP) to STA1. It demonstrates the attack because STA1 stops sending traffic to AP after
+receiving this deauthentication message, thinking AP no longer wants to receive any traffic from STA1. After this first de-authentication packet, a second de-authentication packet is sent by
+the attacker (spoofing as STA1) to the AP, making it so neither side suspects anything, and will simply try to re-associate. This sending of de-authentication packets conttinues
+with packets being sent by the attacker to STA1 and AP (still spoofing as AP for STA1 and as STA1 for AP) until 64 packets have been sent in both directions (thus, 128 total).\\ \\
+%
+The continued sending of de-authentication packets makes it so that the STA1 cannot re-associate with the AP. After the 128 packets the de-association attack stops and in packet 1104 we see
+a new association start up between STA1 and AP which succeeds, as the attack has ceased. After this association succeeds, pings resume as normal and we see that the amount of time that our
+attack interrupted the pings for was roughly equal to 5 seconds.
