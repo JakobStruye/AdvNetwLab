@@ -1,2 +1,1 @@
-WEP encrypted everything below the IEEE 802.11 Data header; in our packet ID 434 in /traces/L4-3-1.STA2.wep.pcap that means the Logical-Link Control part of the packet,
-the IPv6 header (meaning source and destination addresses are no longer visible in wireshark) and the ICMPv6 header.
+WEP encrypted the Logical Link Control header and everything in Layer 3 and above. In for example packet 1408 only the IEEE 802.11 header is readable. The LLC header, IP header and ICMP header + data are all combined into one encrypted data field. Analogously, in the ARP request in packet 1408 the LLC header and ARP fields are encrypted.
