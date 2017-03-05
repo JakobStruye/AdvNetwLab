@@ -1,4 +1,4 @@
-In the first dump, when the station sent an authentication frame (packet 2666) the AP replied with an authentication frame (packet 2668) indicating the station was succesfully authenticated (status code 0: successful).\\
-In the second case, with MAC filtering enabled and configured to not allow STA1's wlan0 to connect,
+In the first dump (traces/L4-1-1.STA2.pcap), when the station sent an authentication frame (packet 2666) the AP replied with an authentication frame (packet 2668) indicating the station was succesfully authenticated (status code 0: successful).\\
+In the second case (found in traces/L4-2-1.STA2.pcap), with MAC filtering enabled and configured to not allow STA1's wlan0 to connect,
 the authentication frame(packet 464) sent by STA1 is met with an authentication frame(packet 466)
 with status code 1. This indicates an unspecified failure. STA1 does not attempt an association as authentication failed. Note that STA1 is not informed that authentication failed because it was blacklisted. There is no reason to let a potential attacker know why exactly they could not connect.
