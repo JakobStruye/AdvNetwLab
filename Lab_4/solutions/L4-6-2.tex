@@ -1,14 +1,8 @@
-After seeing the first set of ping messages (though, we did not manage to decrypt them all using Wireshark), we see 128 de-authentication messages in the dump file (traces/L4-6-1.STA1.pcap).
-Out of those 128 packets, 64 are sent to the AP by what appears to be STA, but it is actually the attacker that is spoofing it's MAC address to be equal to STA1's wlan1 interface and the
-remaining 64 are sent to the STA1 by what appears to be the AP, but it is again the attacker spoofing it's MAC address to be equal to AP's.\\ \\
+Wireshark could not decrypt the earliest ping packets. It is possible that the multiple EAPOL handshakes between STA1 and AP due to the attack confused Wirehsark. The others can again be decrypted with wpa-pwd aRandomPassphrase:wmn-
+1-A \\ \\
+
+After seeing the first set of ping messages (not decrypted by Wireshark), we see 128 deauthentication messages in the dump file (traces/L4-6-1.STA1.pcap).
+Out of those 128 packets, 64 are sent to the STA by what appears to be AP (e.g. 203), and the other 64 are sent in the opposite direction (e.g. 205). Both of these are actually sent by the attacker, who is spoofing the source MAC address to be equal to STA1's or AP's wlan1 interface. These are the MAC addresses we added to the command. By sending deauth packets to both STA and AP, both are aware of the deauthentication, preparing both for the following reauthentication. As the purpose of a deauthentication attack is often to capture the following handshake, this is useful. By sending many deauth packets, the attacker increases the likelihood of at least one being received even when reception is poor. The attack works as soon as one is received. One pair of deauthorization packets is sent every 50ms. There is a 20ms interval between the AP to STA and the STA to AP packet. This means the attacker sends spoofed deauthorizations for about 3.15 seconds. \\ \\
 %
-In our dump file (/traces/L4-6-1.STA1.pcap) we can see a reassociation that starts at packetID 502 (after a first attack, but the packets before the first attack are less clear
-because we could not decrypt the first ping session.) that is followed by a few pings exchanges with the last reply arriving in packetID 765. After this packet 765 we again started
-a de-association attack, which starts with the packet with ID 791 that is sent by the attacker (spoofing as the AP) to STA1. It demonstrates the attack because STA1 stops sending traffic to AP after
-receiving this deauthentication message, thinking AP no longer wants to receive any traffic from STA1. After this first de-authentication packet, a second de-authentication packet is sent by
-the attacker (spoofing as STA1) to the AP, making it so neither side suspects anything, and will simply try to re-associate. This sending of de-authentication packets conttinues
-with packets being sent by the attacker to STA1 and AP (still spoofing as AP for STA1 and as STA1 for AP) until 64 packets have been sent in both directions (thus, 128 total).\\ \\
+We see the STA ceases the pings as soon as a deauthentication is received, as it thinks the AP no longer wants to receive any traffic from it. A reauthentication (packet 491) + reassociation (packet 502) start roughly 0.4 seconds after the attack ceased. Once the full authentication + assocation process is completed, pings resume at packet 522. Afterwards we started another two deauthentication attacks with the same effect. 
 %
-The continued sending of de-authentication packets makes it so that the STA1 cannot re-associate with the AP. After the 128 packets the de-association attack stops and in packet 1104 we see
-a new association start up between STA1 and AP which succeeds, as the attack has ceased. After this association succeeds, pings resume as normal and we see that the amount of time that our
-attack interrupted the pings for was roughly equal to 5 seconds.
