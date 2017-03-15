@@ -1,16 +1,17 @@
-The frames other than data (data being QoS Null, Null and Data) are the following. Note that not all of these were packets related to what we were doing.
-\begin{itemize}
-\item Action, ie 4380
-\item Request-To-Send packet 2294
-\item Clear-To-Send packet 2295
-\item 802.11 Block Ack 2544
-\item Acknowledgement, ie 2259
-\item Probe Response ie 2601
-\item Probe Request ie 2740
-\item data = icmp ??
-\item neighbour discovery stuff?
-\item VHT NDP Announcement ie 716
-\end{itemize}
+The main kind of other frame related to our traffic we observe here is the IEEE 802.11 Acknowledgement. Each ping request/reply has an Acknowledgement immediately following it (e.g. Acknowledgement in packet 2261 following ping request in packet 2260).
+%The frames other than data (data being QoS Null, Null and Data) are the following. Note that not all of these were packets related to what we were doing.
+%\begin{itemize}
+%\item Action, ie 4380
+%\item Request-To-Send packet 2294
+%\item Clear-To-Send packet 2295
+%\item 802.11 Block Ack 2544
+%\item Acknowledgement, ie 2259
+%\item Probe Response ie 2601
+%\item Probe Request ie 2740
+%\item data = icmp ??
+%\item neighbour discovery stuff?
+%\item VHT NDP Announcement ie 716
+%\end{itemize}
 
 
 % There are three main types of frames observed, but each can be divided into separate subtypes.
