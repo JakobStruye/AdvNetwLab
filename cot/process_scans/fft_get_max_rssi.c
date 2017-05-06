@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2012 Simon Wunderlich <sw@simonwunderlich.de>
  * Copyright (C) 2012 Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V.
  *
@@ -15,7 +15,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
  * 02110-1301, USA
- * 
+ *
  */
 
 /*
@@ -380,9 +380,10 @@ int main(int argc, char *argv[])
 	char *ss_name = NULL;
 	char *fontdir = NULL;
 	char *prog = NULL;
-    struct scanresult *result;
-    int max_signal = -200;
-    int counter = 0;
+  struct scanresult *result;
+  int max_signal = -200;
+  int counter = 0;
+  int channel_freq = 0;
 
 	if (argc >= 1)
 		prog = argv[1];
@@ -407,6 +408,9 @@ int main(int argc, char *argv[])
 	if (argc >= 1)
 		ss_name = argv[0];
 
+  // If a channel is specified, pass it to the eval function, only look at the channel with that center frequency
+  if (argc >= 2)
+    channel_freq = atoi(argv[1]);
 	//fprintf(stderr, "WARNING: Experimental Software! Don't trust anything you see. :)\n");
 	//fprintf(stderr, "\n");
 
@@ -425,14 +429,26 @@ int main(int argc, char *argv[])
 	//graphics_main(ss_name, fontdir);
 
 	for (result = result_list; result ; result = result->next) {
-        counter++;
+      counter++;
+      if (argc < 2) {
         printf("%d\n", result->sample.ath10k.header.noise + result->sample.ath10k.header.rssi);
         if ((result->sample.ath10k.header.noise + result->sample.ath10k.header.rssi) > max_signal) {
             //printf("NEW MAX %d %d counter %d\n", result->sample.ath10k.header.noise, result->sample.ath10k.header.rssi, counter);
             max_signal = result->sample.ath10k.header.noise + result->sample.ath10k.header.rssi;
         }
+      }
+      else {
+        if (result->sample.ht20.freq != result->sample.ht40.freq || result->sample.ath10k.header.freq1 != result->sample.ht40.freq) {
+          printf("some weird unexpected behaviour, seems these three frequenties should all just be equal\n");
+        } else if (result->sample.ht20.freq == result->sample.ht40.freq && result->sample.ath10k.header.freq1 == result->sample.ht40.freq \
+            && result->sample.ht40.freq == channel_freq
+            && result->sample.ath10k.header.noise + result->sample.ath10k.header.rssi > max_signal) {
+          max_signal = result->sample.ath10k.header.noise + result->sample.ath10k.header.rssi;
+        }
+      }
     }
-    //printf("%d\n", max_signal);
+    //printf("Max signal for channel %d:  %d\n", channel_freq, max_signal);
+    printf("%d\n",max_signal);
 
 	free(fontdir);
 	free_scandata();
