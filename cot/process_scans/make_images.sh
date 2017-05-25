@@ -1,11 +1,22 @@
 #!/bin/bash
-#2.4Ghz --> 0
-#5  Ghz --> 1
-type=0
+#2.4Ghz --> type =0
+# type=0
+# start=1
+# end=11
+# diff=5
+
+#5  Ghz --> type = 1
+type=1
+start=36
+end=64
+diff=4
 
 for i in cot-node3-student cot-node4-student cot-node7-student cot-node9-student cot-node10-student cot-node12-student ; do
-  for j in 1 6 11 ; do
+  j=$start
+  while [ $j -le $end ]
+  do
     python plot_week_smoothings.py ~/Desktop/UA/AdvNetwLab/current_backup/$i/outputFLUSH/ 2017-05-15,2017-05-16,2017-05-17,2017-05-18,2017-05-19,2017-05-20,2017-05-21,2017-05-22 $type 5 $j 2017-05-14 2017-05-23 $i
+    j=$[$j+$diff]
   done
 done
 
@@ -15,22 +26,41 @@ done
 #For cot-node9-student          : 9999-99-99_99-99
 #For cot-node12-student         : 9999-99-99_99-99
 #For cot-node10-student         : 2017-05-11_11-52 <- enige die 0 is vanwege reboot dus resultaat is nog ok
-
 i='cot-node6-student'
-#For cot-node6-student          : 2017-05-22_21-31 <- 12 -> 20 is doable with 11 and 21 to smoothe
-# python plot_week_smoothings.py ~/Desktop/UA/AdvNetwLab/current_backup/$i/outputFLUSH/ 2017-05-12,2017-05-13,2017-05-14,2017-05-15,2017-05-16,2017-05-17,2017-05-18,2017-05-19,2017-05-20 $type 100 0 2017-05-11 2017-05-21 $i
+j=$start
+while [ $j -le $end ]
+do
+  #For cot-node6-student          : 2017-05-22_21-31 <- 12 -> 20 is doable with 11 and 21 to smoothe
+  python plot_week_smoothings.py ~/Desktop/UA/AdvNetwLab/current_backup/$i/outputFLUSH/ 2017-05-12,2017-05-13,2017-05-14,2017-05-15,2017-05-16,2017-05-17,2017-05-18,2017-05-19,2017-05-20 $type 5 $j 2017-05-11 2017-05-21 $i
+  j=$[$j+$diff]
+done
 i='node1'
-# #For node1                      : 2017-05-19_23-00 <- 13 -> 17 is doable with 12 and 18 to smoothe
-# python plot_week_smoothings.py ~/Desktop/UA/AdvNetwLab/current_backup/$i/outputFLUSH/ 2017-05-13,2017-05-14,2017-05-15,2017-05-16,2017-05-17 $type 100 0 2017-05-12 2017-05-18 $i
+j=$start
+while [ $j -le $end ]
+do
+  # #For node1                      : 2017-05-19_23-00 <- 13 -> 17 is doable with 12 and 18 to smoothe
+  python plot_week_smoothings.py ~/Desktop/UA/AdvNetwLab/current_backup/$i/outputFLUSH/ 2017-05-13,2017-05-14,2017-05-15,2017-05-16,2017-05-17 $type 5 $j 2017-05-12 2017-05-18 $i
+  j=$[$j+$diff]
+done
 i='cot-node5-student'
-# #For cot-node5-student          : 2017-05-18_21-46 <- 12 -> 16 is doable with 11 and 17 to smoothe things out
-# python plot_week_smoothings.py ~/Desktop/UA/AdvNetwLab/current_backup/$i/outputFLUSH/ 2017-05-12,2017-05-13,2017-05-14,2017-05-15,2017-05-16 $type 100 0 2017-05-11 2017-05-17 $i
+j=$start
+while [ $j -le $end ]
+do
+  # #For cot-node5-student          : 2017-05-18_21-46 <- 12 -> 16 is doable with 11 and 17 to smoothe things out
+  python plot_week_smoothings.py ~/Desktop/UA/AdvNetwLab/current_backup/$i/outputFLUSH/ 2017-05-12,2017-05-13,2017-05-14,2017-05-15,2017-05-16 $type 5 $j 2017-05-11 2017-05-17 $i
+  j=$[$j+$diff]
+done
 i='cot-node8-student'
-# #For cot-node8-student          : 2017-05-18_23-31 <- 12 -> 16 is doable, 18 is rekt
-# python plot_week_smoothings.py ~/Desktop/UA/AdvNetwLab/current_backup/$i/outputFLUSH/ 2017-05-12,2017-05-13,2017-05-14,2017-05-15,2017-05-16 $type 100 0 2017-05-11 2017-05-17 $i
+j=$start
+while [ $j -le $end ]
+do
+  python plot_week_smoothings.py ~/Desktop/UA/AdvNetwLab/current_backup/$i/outputFLUSH/ 2017-05-12,2017-05-13,2017-05-14,2017-05-15,2017-05-16 $type 5 $j 2017-05-11 2017-05-17 $i
+  # #For cot-node8-student          : 2017-05-18_23-31 <- 12 -> 16 is doable, 18 is rekt
+  j=$[$j+$diff]
+done
 
 #For cot-node11-student         : 2017-05-10_15-40 <- unusable..;
-# python plot_week_smoothings.py ~/Desktop/UA/AdvNetwLab/current_backup/$i/outputFLUSH/ 2017-05-15,2017-05-16,2017-05-17,2017-05-18,2017-05-19,2017-05-20,2017-05-21,2017-05-22 0 100 0 2017-05-14 2017-05-23 $i
+# python plot_week_smoothings.py ~/Desktop/UA/AdvNetwLab/current_backup/$i/outputFLUSH/ 2017-05-15,2017-05-16,2017-05-17,2017-05-18,2017-05-19,2017-05-20,2017-05-21,2017-05-22 0 5 $j 2017-05-14 2017-05-23 $i
 
 # uauser@thomas-P6661:~/Desktop/UA/AdvNetwLab/current_backup$ find cot-node11-student/outputFLUSH/ -size 0 | wc -l
 # 20583

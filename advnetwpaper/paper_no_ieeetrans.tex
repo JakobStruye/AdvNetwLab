@@ -269,32 +269,115 @@ As the dBm power values computed from the noise floor and RSSI are not linear bu
 The earliest reference to this formula being used with the FOSS Atheros drivers was in an email on the ath9k-devel mailing list by Zefir Kurtisi (https://www.spinics.net/lists/linux-wireless/msg101011.html TODO cite), in reply to the Request For Comments (RFC) on spectral scan support by Simon Wunderlich. As far as we know neither this formula nor the calculation of its parameters were ever confirmed to be correct by Qualcomm Atheros. This remains an educated guess by the community.
 
 \section{Measurements}
-At first we measured the spectrum on every channel in both the 2.4GHz and the 5GHz band every 10 minutes. Looking at graphic interpretations of the resulting data it was clear that a shorter time between scans would be more effective at showing us the state of the spectrum because recurring spikes were missed on some days despite their presence being clear in subsequent smaller tests. 
-\\< images waarop da duidelijk is >\\
+At first we measured the spectrum on every channel in both the 2.4GHz and the 5GHz band every 10 minutes. Looking at graphic interpretations of the resulting data it was clear that a shorter time between scans would be more effective at showing us the state of the spectrum because recurring spikes were missed on some days despite their presence being clear in subsequent smaller tests. \\
 Another point that was raised following the first set of graphic interpretations was that of outlier detection and elimination, occasionally there were big spikes in the received signal strength which are most likely caused by interference.
-Playing around with some parameters, we reduced the time between scans from 10 minutes to 2 minutes and discard the 100 largest readings for every sample (when looking at all the channels). This limit of 2 minutes was the minimum we could achieve while guaranteeing a scan would succeed and the number of samples to discard was chosen based on some experimentation.
-Using an adapted version of Simon Wünderlich's fft$\_$eval code, Python's Matplotlib library and Savitzky-Golay (source? TODO) filtering we graphically represent our data points per node. For CoT-node12 (location : UAntwerpen campus Middelheim, indoors), looking at the 2.4 GHz band on every channel from monday May 15th to monday May 22nd, we got the following graph:\\
-\includegraphics[scale=0.7]{images/window_361_2.4/2017-05-22cot-node12-student_image.pdf}\\
-Each line/color represents a day, using this representation we tried to find recurring patterns in the measurements for every node separately. When looking at the complete set of channels, patterns were not as clear as we'd hoped.\\
-Given this and the fact that a large amount of static on one channel would make it seem like the entire spectrum is full we switched to drawing the graphs per non-overlapping channel and observing the results in that way. This lead to following graph on which we can clearly see that on weekdays there is substantially more traffic during the daytime than on the weekend (which is as expected for a university campus):\\
-\includegraphics[scale=0.7]{images/2017-05-22cot-node12-student_image.pdf}\\
-
+Playing around with some parameters, we reduced the time between scans from 10 minutes to 2 minutes and added a parameter to discard a number of the strongest signals to deal with these outliers. This limit of 2 minutes was the minimum we could achieve while guaranteeing a scan would succeed and the number of samples to discard can be tweaked as needed.
+Using an adapted version of Simon W{\"u}nderlich's fft$\_$eval code, Python's Matplotlib library, the mathematical formula's mentioned above and Savitzky-Golay (source? TODO) filtering we graphically represent our data points per node. For CoT-node12 (location : UAntwerpen campus Middelheim, indoors), looking at the 2.4 GHz band on channel 1 from monday May 15th to monday May 22nd, yields the following graph:\\
+\begin{figure}[h!]
+    \centering
+    \textbf{CoT-node12-student, channel 1, 15/05 - 22/05}\par\medskip
+	\includegraphics[scale=0.7]{images/2_4_GHz/cot-node12-student_2017-05-22_chan1_image.png}
+\end{figure}
+\clearpage
+Each line/color represents a day, the legend is the following (will be the same for every graph unless indicated otherwise):
+\begin{itemize}
+\setlength\itemsep{-0.4em}
+\item Blue: Monday, May 15th	
+\item Green: Tuesday, May 16th
+\item Red: Wednesday, May 17th
+\item Cyan: Thursday, May 18th
+\item Magenta: Friday, May 19th
+\item Yellow: Saturday, May 20th
+\item Black: Sunday, May 21st
+\item Grey: Monday, May 22nd
+\end{itemize}
+Looking at the spectrum with all the channels as a whole proved not very useful when assessing the state of the spectrum because the if one of the non-overlapping channels is busy it would sway the graph to reflect the entire band to be busy, which would not be the case.
 \section{Findings}
 \subsection{Evolution throughout the day}
-\subsection{Evolution throughout the week}
+
 \subsection{Recurring patterns between days} 
-On the different nodes we had varying degrees of success in finding recurring patterns. For this report we've only included the nodes on which we did find such patterns (and we have included the non pattern-y graphs in the zip file that is included // they are available on demand? TODO) 
+On the different nodes we had varying degrees of success in finding recurring patterns. In the 2.4 GHz band, two nodes that clearly showed repeating patterns across several days were cot-node8-student and cot-node12-student. Both of these nodes detected patterns, node8 detecting a large increase in spectrum usage in the afternoon and node12 detecting an increase during the daytime on weekdays, while on the weekends there was no increase present. 
+\begin{figure}[!htb]
+    \centering
+    \textbf{CoT-node12-student, channel 1, 15/05 - 22/05}\par\medskip
+	\includegraphics[scale=0.5]{images/2_4_GHz/cot-node12-student_2017-05-22_chan1_image.png}
+\end{figure}
+\begin{figure}[htb!]
+    \centering
+    \textbf{CoT-node8-student, channel 1, 12/05 - 16/05}\par\medskip
+	\includegraphics[scale=0.5]{images/2_4_GHz/cot-node8-student_2017-05-16_chan1_image.png}
+\end{figure}
+\\
+For the second graph, belonging to cot-node8-student, we had to change the days because we did not receive all the measurements due to (presumed) hardware failure. For this graph, the legend is: 
+\begin{itemize}
+\setlength\itemsep{-0.4em}
+\item Blue: Friday, May 12th	
+\item Green: Saturday, May 13th
+\item Red: Sunday, May 14th
+\item Cyan: Monday, May 15th
+\item Magenta: Tuesday, May 16th
+\end{itemize}
+Aside from this, for the 2.4GHz band another thing that kept recurring daily was the perceived business of the spectrum on channel 1 on both cot-node3-student and cot-node9-student, as seen in the following graphs:
+\begin{figure}[h!]
+    \centering
+    \textbf{CoT-node3-student, channel 1, 15/05 - 22/05}\par\medskip
+	\includegraphics[scale=0.5]{images/2_4_GHz/cot-node3-student_2017-05-22_chan1_image.png}
+\end{figure}
+\begin{figure}[h!]
+    \centering
+    \textbf{CoT-node9-student, channel 1, 15/05 - 22/05}\par\medskip
+	\includegraphics[scale=0.5]{images/2_4_GHz/cot-node9-student_2017-05-22_chan1_image.png}
+\end{figure}
+and we have included the non pattern-y graphs in the zip file that is included // they are available on demand? TODO) 
+<Nodes that have recurring patterns>
 \subsection{Calm and busy channels}
-1 busy, 6, 11 calm
+As shown in the previous two graphs, channel 1 is usually the most busy channel in the 2.4 GHz band, with channels 6 and 11 trailing far behind. The nodes that saw the most traffic on channel 1 were cot-node3-student and cot-node9-student (see graphs previous subsection) but the traffic they saw on channel 6 and channel 11 is not particulary busy compared to the traffic seen on the other nodes, as we can see from these graphs:\\
+\begin{figure}[h!]
+    \centering
+    \textbf{CoT-node3-student, channel 6, 15/05 - 22/05}\par\medskip
+	\includegraphics[scale=0.5]{images/2_4_GHz/cot-node3-student_2017-05-22_chan6_image.png}
+\end{figure}
+\begin{figure}[h!]
+    \centering
+    \textbf{CoT-node9-student, channel 11, 15/05 - 22/05}\par\medskip
+	\includegraphics[scale=0.5]{images/2_4_GHz/cot-node9-student_2017-05-22_chan11_image.png}
+\end{figure}
+\newpage
+From the data gathered on the indoors-nodes (i.e. all but node1) we gathered that the 2.4 GHz band's channels 6 and 11 should be usable for these nodes given the amount of traffic we saw on it. The busiest spectrum we saw for the indoor nodes went up to about -75dBm (on cot-node12-student and cot-node3-student). When we compare this to the outdoors node, node1, we see that it's spectrum is also around that value, though slightly higher. For this graph, another legend is used because this node also experienced a (presumed) hardware failure.
+\begin{itemize}
+\setlength\itemsep{-0.4em}
+\item Blue: Saturday, May 13th
+\item Green: Sunday, May 14th
+\item Red: Monday, May 15th
+\item Cyan: Tuesday, May 16th
+\item Magenta: Wednesday, May 17th
+\end{itemize}
+\begin{figure}[h!]
+    \centering
+    \textbf{node1, channel 6, 13/05 - 17/05}\par\medskip
+	\includegraphics[scale=0.5]{images/2_4_GHz/node1_2017-05-17_chan6_image.png}
+\end{figure}
+\begin{figure}[h!]
+    \centering
+    \textbf{node1, channel 11, 13/05 - 17/05}\par\medskip
+	\includegraphics[scale=0.5]{images/2_4_GHz/node1_2017-05-17_chan11_image.png}
+\end{figure}
 \subsection{2.4 GHz vs 5 GHz}
+niks van de 5ghz bevat iets zinnigs (op node3 / chan36 na) - nodes te ver weg ?
+>> still running the graph generator for 5GHz to compare lol
 \subsection{Validation}
-scans met / zonder sturende laptop - stukje had gij al
-dagelijkse patronen
-outside / inside t zelfde +-
+In terms of data validation, we have three parts that we looked at that give us confidence that our data would be valid.
+scans met / zonder sturende laptop - stukje had gij al TODO
 
+A second point is the discovering of daily patterns where we expected them. This includes the pattern of daily activity seen in the node at the Middelheim campus as well as seeing a decrease in activity on holidays such as May 1st TODO, we saw this on 12.. 
+The third and final point that enforces our trust in the validity of the data we collected and thus also our findings is the fact that the outside node's measurements do not vary wildly from the indoor measurements: it's channel 6 and channel 11 activity is lower than it's channel 1 activity, which is the busiest channel. There is more jitter on the outdoor node's results which is most likely due to it being outside. Our measurements for channel 1 on the outside node can be found below:\\ 
+\begin{figure}[h!]
+    \centering
+    \textbf{node1, channel 1, 13/05 - 17/05}\par\medskip
+	\includegraphics[scale=0.5]{images/2_4_GHz/node1_2017-05-17_chan1_image.png}
+\end{figure} \newpage
 \section{Conclusions}
-The conclusion goes here.
-
+So, how bad is it, in general? That was the question to which we sought to find an answer in this project. From the results, it seems clear that the 5 GHz band near the nodes is mostly unused and the 2.4 GHz band could be used if set to chan6 or chan11 TODO
 
 \bibliographystyle{IEEEtran}
 \bibliography{IEEEabrv,../chapters/bibliography}
