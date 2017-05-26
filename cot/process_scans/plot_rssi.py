@@ -135,21 +135,24 @@ if __name__ == '__main__':
         next_day = sys.argv[7]
 
     if fix_endpoints:
-        for (minute) in range(first_minute, 60, 2):
-            max_point = process_point(prev_day, 23, minute)
-            maxes.append(max_point)
+        for hour in range(20,24,1):
+            for (minute) in range(first_minute, 60, 2):
+                max_point = process_point(prev_day, hour, minute)
+                maxes.append(max_point)
 
     for (hour, minute) in itertools.product(range(24), range(first_minute, 60, 2)):
         max_point = process_point(day, hour, minute)
         maxes.append(max_point)
 
     if fix_endpoints:
-        for (minute) in range(first_minute, 60, 2):
-            max_point = process_point(next_day, 0, minute)
-            maxes.append(max_point)
+        for hour in range(0,4,1):
+
+            for (minute) in range(first_minute, 60, 2):
+                max_point = process_point(next_day, hour, minute)
+                maxes.append(max_point)
 
     # Endpoints fix has 2 hours of additional data
-    x = np.linspace(0, 24, 720) if not fix_endpoints else np.linspace(-1, 25, 780)
+    x = np.linspace(0, 24, 720) if not fix_endpoints else np.linspace(-4, 28, 960)
 
     y = np.asarray(maxes)
 
@@ -162,8 +165,8 @@ if __name__ == '__main__':
     plt.xticks(np.arange(0, 25, 2))
     # Cut off endpoints fix; only show current day
     plt.xlim([0, 24])
-    plt.xlabel('Hours')
-    plt.ylabel('Received signal strength (dBm)')
+    plt.xlabel('Time of day (hours)')
+    plt.ylabel('Smoothed received signal strength (dBm)')
 
     raw_label = mpatches.Patch(color='blue', label='Highest signal strength (top %d removed)' % filter_num)
     smooth1_label = mpatches.Patch(color='red', label='Savitzky-Golay filtered, order 3, window size 101')
