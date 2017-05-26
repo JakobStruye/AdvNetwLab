@@ -296,11 +296,10 @@ At first we measured the spectrum on every channel in both the 2.4GHz and the 5G
 \caption{Savitzky-Golay smoothing, 4 additional hours of data points for each end.}
 \label{savitzky_4}
 \end{minipage}\
-
 \end{figure}
 
 We perform one scan per minute, alternating between 2.4GHz and 5.0GHz. As each scan takes at least 25 seconds to complete, we chose not to lower this interval any further. This generates around 860MB of raw data per node per day. Even when only considering the maximum signal strength per sample, we still need some way to condense this to a more digestible format. We experimented with some smoothing algorithms and had the best results with the Savitzky-Golay filter\footnote{\url{https://en.wikipedia.org/wiki/Savitzky\%E2\%80\%93Golay_filter}}. A detailed analysis of the filter was considered outside of the scope of this document, but we note that it is a digital filter intended for equally spaced data points that smooths data through convolution. We always used polynomials of degree 3. The only other parameter is the window size. The higher the window size, the smoother the final result. Figure \ref{savitzky_0} shows the resulting smoothings for 2 different window sizes. The smaller window size reveals some details such as the drop in activity between noon and 1PM (lunch time), while the larger window size is detailed enough to show that daytime is more active than nighttime. This filter performs well mainly for the center of the data set. The edges of the smoothing are clearly inaccurate, especially the sudden rise at the end of the day. This is a known issue with this filter. Luckily we usually also have the data of the preceding and following day. By starting the smoothing earlier and ending it later, we obtain a better smoothing. Figure \ref{savitzky_1} was generated using the data starting at 11PM the day before up to 1AM the day after. In figure \ref{savitzky_4} we increased this margin to 4 hours at each end. While the 1 extra hour does little to improve the smoothing and even leads to a worse result in one case, the effect disappears completely with the 4 additional hours. We use this 4 hour buffer for all smoothings. Furthermore we decided to use the larger window size. The smoother graphs make it easier on the eye to compare multiple smoothings on one graph. Additionally effects such as the drop during lunchtime were often not seen with even tighter window sizes.\\
-\newpage
+\newpage %Required to fix wrapfigure formatting
 \begin{wrapfigure}{r}{0.35\textwidth}
 \centering
 \captionsetup{justification=centering}
@@ -358,7 +357,7 @@ In this section we present the results of our experiment. Due to (presumed) hard
 \subsubsection{Recurring patterns between days} 
 On the different nodes we had varying degrees of success in finding recurring patterns. In the 2.4 GHz band, two nodes that clearly showed repeating patterns across several days were node 8 at the Museum Plantin-Moretus and node 12 at the University of Antwerp, Middelheim campus. Both of these nodes detected patterns, with node 8 detecting a large increase in spectrum usage in the afternoon and node 12 detecting an increase during the daytime on weekdays. There were no peaks during the weekend. Node 8 was one of the nodes with failure, so we had to limit its timeframe.
 
-\begin{figure}[!h]
+\begin{figure}
 \begin{minipage}{0.47\textwidth}
     \centering
 	\includegraphics[width=\textwidth]{images/2_4_GHz/cot-node12-student_2017-05-22_chan1_image}
@@ -369,8 +368,7 @@ On the different nodes we had varying degrees of success in finding recurring pa
 	\includegraphics[width=\textwidth]{images/2_4_GHz/cot-node8-student_2017-05-16_chan1_image}
     \caption{Node 8, ch. 1, 12/05 - 16/05} \label{node8-1}
 \end{minipage}\hfill
-\end{figure}
-\begin{figure}[!h]
+
 \begin{minipage}{0.47\textwidth}
     \centering
 	\includegraphics[width=\textwidth]{images/2_4_GHz/cot-node12-student_2017-05-22_chan6_image}
@@ -381,8 +379,6 @@ On the different nodes we had varying degrees of success in finding recurring pa
 	\includegraphics[width=\textwidth]{images/2_4_GHz/cot-node8-student_2017-05-16_chan6_image}
     \caption{Node 8, ch. 6, 12/05 - 16/05} \label{node8-6}
 \end{minipage}\hfill
-\end{figure}
-\begin{figure}[!h]
 \begin{minipage}{0.47\textwidth}
     \centering
 	\includegraphics[width=\textwidth]{images/2_4_GHz/cot-node12-student_2017-05-22_chan11_image}
@@ -395,13 +391,13 @@ On the different nodes we had varying degrees of success in finding recurring pa
 \end{minipage}\hfill
 \end{figure}
 
-The most noticeable peak for node 12 is on channel 1, with the received signal strength during the daytime being up to 20dBm higher than during the night time. During the weekend (black and yellow) there is no peak whatsoever. This indicates the traffic is most likely caused by Wi-Fi usage at the university, which is closed during the weekend. For the other channels there a noticeable peak during the daytime for some but not all weekdays. The weekend is still the quietest time of the week. Node 8 also shows a peak during the afternoon for channel 1, except on Sunday. Surprisingly the museum is open on Sunday, but closed on Monday. Of the days with a peak, Monday's peak is the lowest. This seems to indicate that while visitors at the museum have some effect on the overall signal strength, the peak has another source, possibly an office nearby. \\ \\
+The most noticeable peak for node 12 is on channel 1 in figure \ref{node12-1}, with the received signal strength during the daytime being up to 20dBm higher than during the night time. During the weekend (black and yellow) there is no peak whatsoever. This indicates the traffic is most likely caused by Wi-Fi usage at the university, which is closed during the weekend. For the other channels there a noticeable peak during the daytime for some but not all weekdays. The weekend is still the quietest time of the week. Node 8 also shows a peak during the afternoon for channel 1 in \ref{node8-1}, except on Sunday. Surprisingly the museum is open on Sunday, but closed on Monday. Of the days with a peak, Monday's peak is the lowest. This seems to indicate that while visitors at the museum have some effect on the overall signal strength, the peak has another source, possibly an office nearby. \\ \\
 We found no such peaks for any other nodes: spectrum usage was stable throughout the day. In the following section we investigate how active the different channels are.
 
 
 \subsubsection{Channel Activity}
 
-\begin{figure}[!h]
+\begin{figure}
 \begin{minipage}{0.47\textwidth}
     \centering
 	\includegraphics[width=\textwidth]{images/2_4_GHz/cot-node3-student_2017-05-21_chan1_image}
@@ -413,8 +409,6 @@ We found no such peaks for any other nodes: spectrum usage was stable throughout
     \caption{Node 9, ch. 1, 15/05 - 22/05} \label{node9-1}
 
 \end{minipage}\hfill
-\end{figure}
-\begin{figure}[!h]
 \begin{minipage}{0.47\textwidth}
     \centering
 	\includegraphics[width=\textwidth]{images/2_4_GHz/cot-node3-student_2017-05-21_chan6_image}
@@ -425,9 +419,6 @@ We found no such peaks for any other nodes: spectrum usage was stable throughout
 	\includegraphics[width=\textwidth]{images/2_4_GHz/cot-node9-student_2017-05-21_chan6_image}
     \caption{Node 9, ch. 6, 15/05 - 22/05} \label{node9-6}
 \end{minipage}\hfill
-\end{figure}
-
-\begin{figure}[!h]
 \begin{minipage}{0.47\textwidth}
     \centering
 	\includegraphics[width=\textwidth]{images/2_4_GHz/cot-node3-student_2017-05-21_chan11_image}
@@ -444,9 +435,13 @@ We found no such peaks for any other nodes: spectrum usage was stable throughout
 
 As shown in figures \ref{node3-1} to \ref{node9-11}, channel 1 is usually the busiest channel in the 2.4 GHz band, with channels 6 and 11 trailing far behind. Node 3 and 9, shown in those figures, measure a very busy medium around channel 1. However channels 6 and 11 are not particulary busy compared to the traffic seen on the other nodes, as we can see from these graphs:\\
 
-\newpage
+
 All nodes covered so far were indoors nodes. We had access to one outdoors node, node 1, on which we also performed the experiment. On the indoors nodes we noticed that channel 6 and 11 were never any busier than channel 1. This is also true for node1: while activity is fairly constant throughout all tested days, channel 1 is again the busiest. Note that we again do not have a full week's data for this node. Note the remarkable difference between weekdays and the weekend here. For channel 11, the weekend is more quiet, however for channel 6 the weekend is the busiest period.
-\begin{figure}[!h]
+
+
+\subsection{5 GHz band}
+\subsubsection{Recurring patterns between days}
+\begin{figure}
 \begin{minipage}{0.47\textwidth}
     \centering
 	\includegraphics[width=\textwidth]{images/2_4_GHz/node1_2017-05-17_chan1_image}
@@ -457,35 +452,24 @@ All nodes covered so far were indoors nodes. We had access to one outdoors node,
 	\includegraphics[width=\textwidth]{images/2_4_GHz/node1_2017-05-17_chan6_image}
     \caption{Node 1, ch. 6, 13/05 - 17/05} \label{node1-6}
 \end{minipage}\hfill
-\end{figure}
-\begin{figure}[h!]
 \begin{minipage}{0.47\textwidth}
     \centering
 	\includegraphics[width=\textwidth]{images/2_4_GHz/node1_2017-05-17_chan11_image}
     \caption{Node 1, ch. 11, 13/05 - 17/05} \label{node1-11}
 \end{minipage}\hfill
-\end{figure}
-%\begin{figure}[h!]
-%    \centering
-%    \textbf{node1, channel 11, 13/05 - 17/05}\par\medskip
-%	\includegraphics[scale=0.5]{images/2_4_GHz/node1_2017-05-17_chan11_image}
-%\end{figure}
-\newpage
-\subsection{5 GHz band}
-\subsubsection{Recurring patterns between days}
-The data gathered during the 5 GHz measurements proved to be less interesting than the data we gathered in the 2.4 GHz measurements. Most of the channels we measured turned out to be empty or contain very little signal which might have been expected given the number of channels available. For the most part, the channels that did show traffic did not show any significant patterns or recurring phenomena though there are some exceptions. One such an exception was the cot-node3-student, that showed a lower amount of traffic for some time around noon on both May 17th and May 22nd. The reason for this however is not as apparent as the cause of the pattern in the 2.4 GHz case where we saw an absence of a spike in traffic during the daytime on the schoolnode. It might be that the decrease occurs every couple of days, for example due to a router switching channels temporarily or restarting or the decrease might simply be an anomaly, this would require further investigation.
-\begin{figure}[ht]
+\begin{minipage}{0.47\textwidth}
 \centering
-\includegraphics[width=0.47\textwidth]{images/5_GHz/cot-node3-student_2017-05-22_chan36_image.pdf}
-% where an .eps filename suffix will be assumed under latex,
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
+\includegraphics[width=\textwidth]{images/5_GHz/cot-node3-student_2017-05-22_chan36_image.pdf}
 \caption{Node 3, ch. 56, 15/05 - 22/05}
 \label{cot3_5ghz_pattern_chan36}
+\end{minipage}\hfill
 \end{figure}
-This graph was generated from our cot-node3-student data discarding the highest 5 (out of roughly 700) signals to combat outliers skewing the graph. The real graph could be a few dBm higher but the result would be no different : the channel is moderately used but there is room for more traffic. On other channels, this node sees barely any traffic in the 5 GHz band. \\
-For the 5 GHz band it is worth noting that the measurements we have from our indoor nodes show some difference from those measured by the outdoors node when looking at channels other than channel 36. The outdoor node has at least some traffic on every channel whereas most of the indoors nodes show the bare minimum of traffic for most channels. An example of the outdoors node's traffic on channel 56 versus an indoors node on that same channel is shown below:
-\begin{figure}[!h]
+The data gathered during the 5 GHz measurements proved to be less interesting than the data we gathered in the 2.4 GHz measurements. Most of the channels we measured turned out to be silent or contain very little signal. This is partly to be expected. Many common communication devices only use the 2.4GHz, and many routers in use do not yet support the 5.0GHz band. Furthermore, any communication that does occur in this band can be more spread out as the band is a lot wider than the 2.4GHz band. For the most part, the channels that did show traffic did not show any significant patterns or recurring phenomena. In most cases the received signal strength was very stable on all channels. We did notice some remarkable behaviour though. For example, node 3 measured a lower signal strength for some time around noon on both May 17\textsuperscript{th} and May 22\textsuperscript{nd} on channel 56, in figure \ref{cot3_5ghz_pattern_chan36}. The reason for this however is not as clear as with the daily peaks experienced in the 2.4GHz It might be that the decrease occurs every couple of days, for example due to a router switching channels temporarily. It could also simply be an anomaly.
+
+For this node, channel 56 was the only somewhat active channel. All other channels saw barely any traffic in the 5.0 GHz band. \\\\
+It is worth noting that, apart from channel 36, there is some difference in the stability of the received signal between the outdoor node and the indoor nodes. The outdoor node has at least some activity on every channel whereas most of the indoors nodes show the bare minimum of activity for most channels. An example of the outdoors node's activity on channel 56 versus an indoors node on that same channel is shown in figures \ref{node1_5ghz_traffic_chan56} and \ref{node9_5ghz_traffic_chan56}. There could be some outside source of slight intermittent interference. As we only had access to one outdoors node we cannot determine whether this generally occurs with outside nodes, or is specific to this one.
+
+\begin{figure}[ht]
 \begin{minipage}{0.47\textwidth}
 	\centering
 	\includegraphics[width=\textwidth]{images/5_GHz/node1_2017-05-17_chan56_image.pdf}
@@ -498,9 +482,9 @@ For the 5 GHz band it is worth noting that the measurements we have from our ind
     \caption{Node 9, ch. 56, 15/05 - 21/05} \label{node9_5ghz_traffic_chan56}
 \end{minipage}\hfill
 \end{figure}
-Which can be attributed to the outdoor node being outdoors and thus having less trouble picking up 5 GHz signals as they penetrate buildings and walls less easily.\\  \\
-There were some other interesting phenomena we observed in the 5 GHz channels, for example the following two graphs paired with a decrease of the signal strength on channel 120 for the same node, as shown on the third graph: \newpage
-\begin{figure}[!h]
+
+There were some other interesting phenomena we observed in the 5 GHz channels. For example, node 6 shows a sudden drop in activity on both channels 56 and 64, coinciding with an increase in traffic on channels 112 and 120, as seen in figures \ref{node6_5ghz_traffic_chan56} up to \ref{node6_5ghz_traffic_chan120}. Looking at a random spectral scan from before and after the shift, we indeed see the same behaviour. There was clear activity in channels 56 and 64 before the shift, seen in figure \ref{cot6_50_early}.
+\begin{figure}[ht]
 \begin{minipage}{0.47\textwidth}
 	\centering
 	\includegraphics[width=\textwidth]{images/5_GHz/cot-node6-student_2017-05-20_chan56_image.pdf}
@@ -513,25 +497,44 @@ There were some other interesting phenomena we observed in the 5 GHz channels, f
 	\caption{Node 6, ch. 64, 14/05 - 20/05}
 	\label{node6_5ghz_traffic_chan64}
 \end{minipage}\hfill
+\begin{minipage}{0.47\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{images/5_GHz/cot-node6-student_2017-05-20_chan112_image.pdf}
+    \caption{Node 6, ch. 112, 14/05 - 20/05}
+    \label{node6_5ghz_traffic_chan112}
+\end{minipage}\hfill
+\begin{minipage}{0.47\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{images/5_GHz/cot-node6-student_2017-05-20_chan120_image.pdf}
+    \caption{Node 6, ch. 120, 14/05 - 20/05}
+    \label{node6_5ghz_traffic_chan120}
+\end{minipage}\hfill
 \end{figure}
-\begin{figure}[ht]
+ While there is some very slight activity in channel 60, so few samples contained any trace of it that it was filtered out. Later on, figure \ref{cot6_50_late} shows that this traffic signature has moved to channels 112 and 120, now with the channel in between showing no traffic at all. We are not sure what device exactly causes this, but it is clear that it was at some point switched to another channel. This shows that the activity in a channel can change at a moment's notice, and indicates that systematic or even constant monitoring of the spectrum is not without merit. We do note that the received high signal is still only -70dBm, meaning there is still room for communication. Furthermore the spectral scan samples show that the those channels are still silent for a large fraction of the time.
+
+
+
+\begin{figure}
+\begin{minipage}[t]{0.47\textwidth}
 \centering
-\includegraphics[width=0.47\textwidth]{images/5_GHz/cot-node6-student_2017-05-20_chan120_image.pdf}
-% where an .eps filename suffix will be assumed under latex,
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-\caption{Node 6, ch. 120, 14/05 - 20/05}
-\label{node6_5ghz_traffic_chan120}
+\includegraphics[width=\textwidth]{cot6_50_early.png}
+\caption{Node 6 channels 56-64, before shift}
+\label{cot6_50_early}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\textwidth}
+\centering
+\includegraphics[width=\textwidth]{cot6_50_late.png}
+\caption{Node 6 channels 112-120, after shift}
+\label{cot6_50_late}
+\end{minipage}\hfill
 \end{figure}
-which seems to show some traffic moving from channel 120 to channel 56 and / or 64 (TODO why doesnt it show on chan60?) on friday May 19th, which lasts all the way through saturday May 20th. We could not confirm when or if the signal ends due to the aforementioned (presumed) hardware failure. This signal still only amounts to an estimated signal strength of about -70 dBm which should still leave enough room for other traffic on the channel and in the spectrum.\\
+
 \subsubsection{Channel Activity}
-For some nodes (all but cot-node6-student, cot-node8-student and node1), checking the higher up channels (the channels numbered 100 and above) shows no traffic on any of the nodes for those channels. For the three nodes mentioned, the fact that node1 shows some traffic on these channels is consistent with earlier observations of the outdoor node seeing more traffic on the 5 GHz band than the indoor nodes. For nodes cot-node6-student and cot-node8-student we don't have an explanation for why they have more traffic on these channels than the other nodes. Fact remains that the 100+ channels are relatively empty.
-Included below are three graphs for three of our nodes; cot-node3-student, cot-node8-student and node1. Each of these was somewhat busy on the 2.4 GHz band, showed some traffic on the lower 5 GHz channels and demonstrates our findings for the higher channels:
-\begin{figure}[!h]
+\begin{figure}[ht]
 \begin{minipage}{0.47\textwidth}
 	\centering
 	\includegraphics[width=\textwidth]{images/5_GHz/cot-node3-student_2017-05-22_chan100_image.pdf}
-	\caption{Node 8, ch. 120, 15/05 - 22/05}
+	\caption{Node 3, ch. 120, 15/05 - 22/05}
 	\label{node3_5ghz_traffic_chan100}
 \end{minipage}\hfill
 \begin{minipage}{0.47\textwidth}
@@ -542,17 +545,18 @@ Included below are three graphs for three of our nodes; cot-node3-student, cot-n
 \end{minipage}\hfill
 \end{figure}
 \begin{figure}[ht]
+\begin{minipage}{0.47\textwidth}
 \centering
-\includegraphics[width=0.47\textwidth]{images/5_GHz/node1_2017-05-17_chan140_image.pdf}
-% where an .eps filename suffix will be assumed under latex,
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
+\includegraphics[width=\textwidth]{images/5_GHz/node1_2017-05-17_chan140_image.pdf}
 \caption{Node 1, ch. 140, 13/05 - 17/05}
 \label{node1_5ghz_traffic_chan140}
+\end{minipage}\hfill
 \end{figure}
-For the lower channels, i.e. channels between 36 and 64, more traffic is observed : mainly on channel 36 though in some cases channel 56 is also used though often not enough to say that the spectrum is fully occupied. We found no clear indication that channels other than 36 and 56 were being heavily used in this range (and 64 in the case of node6 TODO incorporate this?). Examples of this usage can be seen in the following graphs. Note that the intensity of the usage does vary between nodes, for channel 40 we have included an illustrative graph, all nodes display similar results for this channel.
-n3 36 n1 36 n12 56
-\begin{figure}[!h]
+For all nodes except 1 (outdoor), 6 and 8, channels 100 and above seem to contain no activity. For the outside node this could merely be some outside interference, although more outside nodes are required to confirm this. For the other two nodes this might simply be a nearby 5.0GHz router. Even for those nodes channels 100 and up are fairly silent.
+Figures \ref{node3_5ghz_traffic_chan100} to \ref{node1_5ghz_traffic_chan140} show traffic on higher channels for nodes 3, 8 and 1. Each of these was somewhat busy on the 2.4 GHz band, and showed some activity on the lower 5 GHz channels. In the higher channels they barely exceed -80dBm. We do again notice shifts in signal strength with node 8, most likely caused by devices hopping to another frequency.
+
+For the lower channels, i.e. channels between 36 and 64, some more activity is observed: mainly channel 36 and occasionally channel 56 are somewhat used. Channel 36 is constantly active on nodes 3 and 1 (outside), as seen in figures \ref{node3_ch36_usage} and \ref{node1_ch36_usage}. Furthermore channel 56 shows clear daytime peaks except during the weekend in \ref{node12_ch56_usage}, likely indicating Wi-Fi usage. Channel 40 is in all cases silent, one example being shown in figure \ref{node10_ch40_usage}. Here we do note a peculiarity of the spectral scan at channel 40. Each node, except for the outside node, consistently shows the pattern in figure \ref{ch40_peak}. It seems that every inside node always measures this slight peak, but it is completely absent for the outside node. As all inside nodes are identical hardware-wise, but the outside node is not, we suspect some component of the inside nodes is continuously creating a signal on channel 40.
+\begin{figure}[!ht]
 \begin{minipage}{0.47\textwidth}
 	\centering
 	\includegraphics[width=\textwidth]{images/5_GHz/cot-node3-student_2017-05-22_chan36_image.pdf}
@@ -565,8 +569,6 @@ n3 36 n1 36 n12 56
 	\caption{Node 1, ch. 36, 13/05 - 17/05}
 	\label{node1_ch36_usage}
 \end{minipage}\hfill
-\end{figure}
-\begin{figure}[!h]
 \begin{minipage}{0.47\textwidth}
 	\centering
 	\includegraphics[width=\textwidth]{images/5_GHz/cot-node12-student_2017-05-21_chan56_image.pdf}
@@ -579,14 +581,23 @@ n3 36 n1 36 n12 56
 	\caption{Node 10, ch. 40, 15/05 - 22/05}
 	\label{node10_ch40_usage}
 \end{minipage}\hfill
+
+	\centering
+	\includegraphics[width=\textwidth]{ch40_peak.png}
+	\caption{Spectral scan: peak for channel 40}
+	\label{ch40_peak}
+
+
 \end{figure}
+\subsection{Implications of high signal strength}
+A high or unstable measured signal strength does not necessarily make a channel unusable for a City of Things node. First of all, we note that all received signal strengths previously reported was due to activity caused by external sources (i.e. not the node itself). When considering using the node for communication, all those signals are considered as noise. As long as this noise is lower than the signal strength used for the node's communication, there is no issue. While a constant noise of -20dBm will make communication very difficult, noise of -70dBm, -60dBm or even -50dBm should be no problem for close-range communication, as the node and its peer could probably generate a stronger signal. Furthermore it is important to note that in many cases the measured high signal strength was not constant. As it was probably caused by a communication device (likely Wi-Fi), the signal source remains silent for a significant fraction of the time. Furthermore such sources of potential interference probably implement some sort of listen-before-talk, further facilitating communication with the node in the presence of such sources. It is however difficult to predict exactly how well communication will work for a specific situation without actually trying it out.
 \subsection{Validation}
 While there is no official confirmation from the chip manufacturer that our interpretation of the spectral scan data is correct, we are confident that our interpretation gives at least a solid estimation of spectrum activity. First of all the experiment in section \ref{accuracy} shows that when we add a source of RF activity near the node, this is clearly seen in the spectral scan at exactly the right frequency. \\
 Furthermore we discovered daily patterns where we expected them. The Middelheim offices are busy during the daytime on weekdays but fairly silent during the weekends and nights. While not shown in the plots above, holidays were just as quiet as weekends.
 \section{Conclusions}
 In this report we presented our findings on activity in the RF spectrum in the 2.4GHz and 5.0GHz bands in the city of Antwerp. One clear theme in our results is that the 5.0GHz is overall quieter than the 2.4GHz band. This is not surprising. The 5.0GHz band is a lot wider than the 2.4GHz band, and its signals do not carry as far. Furthermore, assuming that a lot of interference originated from Wi-Fi routers, one factor could be that many active routers and other devices do not yet support 5.0GHz. In addition, technologies such as Bluetooth, which could also be creating signals, only affects 2.4GHz.\\ \\
 In some environments we notice a daily pattern where the signal strength is about 20dBm higher during the day compared to the night. As this was mainly observed on nodes in office spaces, this effect disappeared during the weekend. Other nodes show absolutely no difference between daytime and nighttime. Often this is when the spectrum is just very quiet. One interesting observation is that channels 6 and 11 were never busier than channel 1. \\
-Furthermore, we found nothing indicating that the wireless spectrum would be unusable for a City of Things network if operating in the 5 GHz band, especially if taking care during channel selection to select a mostly unused channel. When operating on the 2.4 GHz band we observed more traffic that would, in some places and on some channels, prevent communication between nodes so in this case it would be especially important to choose a channel that is not already completely occupied but our findings show that it should be possible.
+Furthermore, we found nothing indicating that City of Things network would experience considerable interference in the 5 GHz band, especially for the higher channel numbers. When operating on the 2.4 GHz band we observed more activity that could, in some places and on some channels, hinder communication with faraway hosts. However there was always at least one channel fairly silent.
 \bibliographystyle{IEEEtran}
 \bibliography{IEEEabrv,./bibliography}
 
