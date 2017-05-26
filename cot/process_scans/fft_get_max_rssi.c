@@ -426,14 +426,16 @@ int main(int argc, char *argv[]) {
     }
 
     for (result = result_list; result; result = result->next) {
-        counter++;
+
         if (argc < 2) {
+            counter++;
             printf("%d\n", result->sample.ath10k.header.noise + result->sample.ath10k.header.rssi);
             if ((result->sample.ath10k.header.noise + result->sample.ath10k.header.rssi) > max_signal) {
                 max_signal = result->sample.ath10k.header.noise + result->sample.ath10k.header.rssi;
             }
         } else {
             if (result->sample.ath10k.header.freq1 == channel_freq) {
+                counter++;
                 printf("%d\n", result->sample.ath10k.header.noise + result->sample.ath10k.header.rssi);
                 if (result->sample.ath10k.header.noise + result->sample.ath10k.header.rssi > max_signal) {
                     max_signal = result->sample.ath10k.header.noise + result->sample.ath10k.header.rssi;
@@ -441,6 +443,7 @@ int main(int argc, char *argv[]) {
             }
         }
     }
+    printf("%d", counter);
     free(fontdir);
     free_scandata();
 

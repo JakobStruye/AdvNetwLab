@@ -84,6 +84,7 @@ if __name__ == '__main__':
                 max_point = process_point(prev_day, hour, minute)
                 maxes.append(max_point)
 
+
         for (hour, minute) in itertools.product(range(24), range(first_minute, 60, 2)):
             max_point = process_point(day, hour, minute)
             maxes.append(max_point)
@@ -117,13 +118,16 @@ if __name__ == '__main__':
     plt.xticks(np.arange(0, 25, 2))
     # Cut off endpoints fix; only show current day
     plt.xlim([0, 24])
-    plt.xlabel('Time of Day (hours)')
-    plt.ylabel('Smoothed Received Signal Strength (dBm)')
+
+    plt.xlabel('Time of day (hours)')
+    plt.ylabel('Smoothed received signal strength (dBm)')
 
     #Additional 15dBm on top for legend
-    plt.ylim([plt.gca().get_ylim()[0],plt.gca().get_ylim()[1]+15])
+    #plt.ylim([plt.gca().get_ylim()[0],plt.gca().get_ylim()[1]+15])
+
 
     #plt.legend(handles=label_list,prop={'size':5})
+
 
     plt.savefig("./images/channel_specific_2.4/"+sys.argv[8]+"_"+day[0]+"_"+"chan"+str(channel_number)+"_image.png", bbox_inches='tight')
     plt.savefig("./images/channel_specific_2.4/"+sys.argv[8]+"_"+day[0]+"_"+"chan"+str(channel_number)+"_image.pdf", bbox_inches='tight')
