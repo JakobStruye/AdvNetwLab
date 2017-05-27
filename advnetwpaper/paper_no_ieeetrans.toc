@@ -1,16 +1,16 @@
-\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
-\contentsline {section}{\numberline {2}Measuring Interference}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}Settings}{4}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Interpreting spectral scans}{4}{subsection.2.2}
-\contentsline {section}{\numberline {3}Measurements}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Accuracy of the measurements}{8}{subsection.3.1}
-\contentsline {section}{\numberline {4}Results}{9}{section.4}
-\contentsline {subsection}{\numberline {4.1}2.4 GHz band}{9}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Recurring patterns between days}{9}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Channel activity}{11}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}5 GHz band}{11}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Recurring patterns between days}{11}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Channel activity}{15}{subsubsection.4.2.2}
-\contentsline {subsection}{\numberline {4.3}Implications of high signal strength}{16}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Validation}{18}{subsection.4.4}
-\contentsline {section}{\numberline {5}Conclusions}{18}{section.5}
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {section}{\numberline {2}Measuring Interference}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Settings}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Interpreting spectral scans}{3}{subsection.2.2}
+\contentsline {section}{\numberline {3}Measurements}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Accuracy of the measurements}{7}{subsection.3.1}
+\contentsline {section}{\numberline {4}Results}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}2.4 GHz band}{8}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Recurring patterns between days}{8}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Channel activity}{10}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}5 GHz band}{10}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Recurring patterns between days}{10}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Channel activity}{14}{subsubsection.4.2.2}
+\contentsline {subsection}{\numberline {4.3}Implications of high signal strength}{15}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Validation}{17}{subsection.4.4}
+\contentsline {section}{\numberline {5}Conclusions}{17}{section.5}
