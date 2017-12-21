@@ -1,5 +1,0 @@
-We observed packets of both ping sessions, from the first session only the replies were caught on the monitor interface and for the second session, all ping packets were seen by the monitor.\\
-%
-Not seeing the ping requests of the first ping session could be due to failed demodulations at the monitor. Across multiple attemps almost all of STA2's ICMP packets were missed while the other STAs' were almost all captured. This could be related to STA1 and STA3 being close to each other and STA2 being farther away.
-%
-Failure to capture/demodulate STA2's packets may be related to the use of beamforming in 802.11n. With beamforming the device can 'aim' its transmission at the intended receiver. When applied here, the monitor would receive a weaker signal, making is harder to demodulate packets, especially when combined with a high data rate. We are however not sure whether the devices use/support beamforming.

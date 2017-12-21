@@ -1,5 +1,0 @@
-No, the behaviour is largely the same: we again capture some ICMP traffic but it is again not the complete conversation. Note that we did manage to capture one ICMP packet (\#262) from STA2 this time, showing that this is not impossible. Also interesting, but unrelated to the 40MHz channel is that one request in the second exchange was captured twice (\#1193 and \#1194). The second instance indicates that it is a retransmission, meaning the monitor was able to capture the first transmission while the intended receiver was not. \\ \\
-%
-Even though we now in theory only monitor half of the used channel, we did not capture any fewer ICMP packets. This is because when combining two 20MHz channels into one 40MHz channel, one of the two is used as the main channel and the other becomes a secondary channel. The secondary channel is only used when needed. '5180 HT40+' means 'use 5180 as the main channel and the one above it as secondary'.
-%
-Because our ICMP traffic is by far not enough to saturate the main channel, the secondary channel remains (largely) unused and we thus observe a capture similar to the previous exercise.
